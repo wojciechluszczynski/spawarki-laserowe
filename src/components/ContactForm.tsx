@@ -85,7 +85,7 @@ export function ContactForm() {
           rows={5}
           required
           disabled={status === 'sending'}
-          placeholder="Jakie materiały tniesz? Jaka grubość? Jak duża produkcja?"
+          placeholder="Jakie materiały spawasz? Jaka grubość? Jak duża produkcja miesięczna?"
           className="border rounded px-3 py-2 text-sm focus:outline-none disabled:opacity-50"
           style={{ borderColor: 'var(--border)', color: 'var(--fg)', backgroundColor: 'var(--bg-card)' }}
         />

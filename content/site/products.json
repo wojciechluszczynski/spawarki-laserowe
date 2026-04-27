@@ -1,46 +1,46 @@
 [
   {
     "family": "BLS1500",
-    "name": "Spawarka laserowa Blink 1500W",
+    "name": "Blink 1500W",
     "image": "/images/spawarka-1500w-double-double.jpg",
-    "workArea": "Ręczna — bez ograniczenia pola roboczego",
+    "workArea": "Ręczna 4w1",
     "description": "Spawarka laserowa 4w1 Blink 1500W — spawanie, czyszczenie, hartowanie, lutowanie laserowe. Podwójny podajnik drutu i podwójna oscylacja głowicy dla wyższej jakości spoiny.",
     "materialThickness": { "stal": "10 mm", "nierdzewna": "6 mm", "aluminium": "4 mm" },
     "variants": [
-      { "power": "1500W / pojedyncza oscylacja / pojedynczy podajnik", "priceNet": 39000, "priceGross": 47970, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-4w1-1500w-podwojna-oscylacja-pojedynczy-podajnik" },
-      { "power": "1500W / pojedyncza oscylacja / podwójny podajnik", "priceNet": 42000, "priceGross": 51660, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-1500w-4w1-pojedyncza-oscylacja-podwojny-podajnik" },
-      { "power": "1500W / podwójna oscylacja / pojedynczy podajnik", "priceNet": 42000, "priceGross": 51660, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-1500w-podwojna-oscylacja-pojedynczy-podajnik" },
-      { "power": "1500W / podwójna oscylacja / podwójny podajnik", "priceNet": 45000, "priceGross": 55350, "bestseller": true, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-1500w-podwojna-oscylacja-podwojny-podajnik" }
+      { "power": "1500W", "oscillation": "pojedyncza", "feeder": "pojedynczy", "priceNet": 39000, "priceGross": 47970, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-4w1-1500w-podwojna-oscylacja-pojedynczy-podajnik" },
+      { "power": "1500W", "oscillation": "pojedyncza", "feeder": "podwójny",   "priceNet": 42000, "priceGross": 51660, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-1500w-4w1-pojedyncza-oscylacja-podwojny-podajnik" },
+      { "power": "1500W", "oscillation": "podwójna",   "feeder": "pojedynczy", "priceNet": 42000, "priceGross": 51660, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-1500w-podwojna-oscylacja-pojedynczy-podajnik" },
+      { "power": "1500W", "oscillation": "podwójna",   "feeder": "podwójny",   "priceNet": 45000, "priceGross": 55350, "bestseller": true,  "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-1500w-podwojna-oscylacja-podwojny-podajnik" }
     ],
     "highlights": ["4w1: spawanie, czyszczenie, hartowanie, lutowanie", "Podwójna oscylacja głowicy — szersza i silniejsza spoina", "Podwójny podajnik — dwa druty bez ręcznej wymiany"]
   },
   {
     "family": "BLS2000",
-    "name": "Spawarka laserowa Blink 2000W",
+    "name": "Blink 2000W",
     "image": "/images/spawarka-2000w-double-double.jpg",
-    "workArea": "Ręczna — bez ograniczenia pola roboczego",
+    "workArea": "Ręczna 4w1",
     "description": "Spawarka laserowa 4w1 Blink 2000W — wyższa moc do grubszych materiałów i wyższej prędkości spawania. Podwójna oscylacja głowicy i podwójny podajnik drutu.",
     "materialThickness": { "stal": "12 mm", "nierdzewna": "8 mm", "aluminium": "6 mm" },
     "variants": [
-      { "power": "2000W / pojedyncza oscylacja / pojedynczy podajnik", "priceNet": 45000, "priceGross": 55350, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-2000w-4w1-pojedyncza-oscylacja-pojedynczy-podajnik" },
-      { "power": "2000W / pojedyncza oscylacja / podwójny podajnik", "priceNet": 48000, "priceGross": 59040, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-2000w-4w1-pojedyncza-oscylacja-podwojny-podajnik" },
-      { "power": "2000W / podwójna oscylacja / pojedynczy podajnik", "priceNet": 48000, "priceGross": 59040, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-2000w-podwojna-oscylacja-pojedynczy-podajnik" },
-      { "power": "2000W / podwójna oscylacja / podwójny podajnik", "priceNet": 51000, "priceGross": 62730, "bestseller": true, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-2000w-podwojna-oscylacja-podwojny-podajnik" }
+      { "power": "2000W", "oscillation": "pojedyncza", "feeder": "pojedynczy", "priceNet": 45000, "priceGross": 55350, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-2000w-4w1-pojedyncza-oscylacja-pojedynczy-podajnik" },
+      { "power": "2000W", "oscillation": "pojedyncza", "feeder": "podwójny",   "priceNet": 48000, "priceGross": 59040, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-2000w-4w1-pojedyncza-oscylacja-podwojny-podajnik" },
+      { "power": "2000W", "oscillation": "podwójna",   "feeder": "pojedynczy", "priceNet": 48000, "priceGross": 59040, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-2000w-podwojna-oscylacja-pojedynczy-podajnik" },
+      { "power": "2000W", "oscillation": "podwójna",   "feeder": "podwójny",   "priceNet": 51000, "priceGross": 62730, "bestseller": true,  "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-2000w-podwojna-oscylacja-podwojny-podajnik" }
     ],
     "highlights": ["Moc 2 kW — spawanie stali węglowej do 12 mm", "Podwójna oscylacja — lepsza fuzja i mniejsza porowatość spoiny", "Najczęściej wybierany tier dla firm z regularną produkcją"]
   },
   {
     "family": "BLS3000",
-    "name": "Spawarka laserowa Blink 3000W",
+    "name": "Blink 3000W",
     "image": "/images/spawarka-3000w-double-double.jpg",
-    "workArea": "Ręczna — bez ograniczenia pola roboczego",
+    "workArea": "Ręczna 4w1",
     "description": "Flagowa spawarka laserowa 4w1 Blink 3000W dla najbardziej wymagających zastosowań. Najwyższa moc w segmencie ręcznym — spawanie grubych elementów stalowych i aluminiowych.",
     "materialThickness": { "stal": "20 mm", "nierdzewna": "12 mm", "aluminium": "10 mm" },
     "variants": [
-      { "power": "3000W / pojedyncza oscylacja / pojedynczy podajnik", "priceNet": 54000, "priceGross": 66420, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-3000w-4w1-pojedyncza-oscylacja-pojedynczy-podajnik" },
-      { "power": "3000W / pojedyncza oscylacja / podwójny podajnik", "priceNet": 57000, "priceGross": 70110, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-3000w-4w1-pojedyncza-oscylacja-podwojny-podajnik" },
-      { "power": "3000W / podwójna oscylacja / pojedynczy podajnik", "priceNet": 57000, "priceGross": 70110, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-3000w-podwojna-oscylacja-pojedynczy-podajnik" },
-      { "power": "3000W / podwójna oscylacja / podwójny podajnik", "priceNet": 60000, "priceGross": 73800, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-3000w-podwojna-oscylacja-podwojny-podajnik" }
+      { "power": "3000W", "oscillation": "pojedyncza", "feeder": "pojedynczy", "priceNet": 54000, "priceGross": 66420, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-3000w-4w1-pojedyncza-oscylacja-pojedynczy-podajnik" },
+      { "power": "3000W", "oscillation": "pojedyncza", "feeder": "podwójny",   "priceNet": 57000, "priceGross": 70110, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-3000w-4w1-pojedyncza-oscylacja-podwojny-podajnik" },
+      { "power": "3000W", "oscillation": "podwójna",   "feeder": "pojedynczy", "priceNet": 57000, "priceGross": 70110, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-3000w-podwojna-oscylacja-pojedynczy-podajnik" },
+      { "power": "3000W", "oscillation": "podwójna",   "feeder": "podwójny",   "priceNet": 60000, "priceGross": 73800, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-3000w-podwojna-oscylacja-podwojny-podajnik" }
     ],
     "highlights": ["Moc 3 kW — najwyższa dostępna w segmencie ręcznym", "Grubość do 20 mm stali węglowej", "Dla zakładów pracujących na dwie zmiany z wymagającymi materiałami"]
   }

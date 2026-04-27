@@ -2,7 +2,7 @@ const steps = [
   {
     n: '01',
     label: 'Opisz swoją produkcję',
-    desc: 'Co tniesz, z jakiego materiału, jakie grubości i ile sztuk miesięcznie. Im więcej szczegółów - tym trafniejszy dobór.',
+    desc: 'Co spawasz, z jakiego materiału, jakie grubości i ile sztuk miesięcznie. Im więcej szczegółów — tym trafniejszy dobór.',
   },
   {
     n: '02',
@@ -12,7 +12,7 @@ const steps = [
   {
     n: '03',
     label: 'Demo na Twoim materiale',
-    desc: 'Organizujemy demonstrację na materiale, który faktycznie tniesz. Możliwość przetestowania przed podjęciem decyzji.',
+    desc: 'Organizujemy demonstrację na materiale, który faktycznie spawasz. Możliwość przetestowania przed podjęciem decyzji.',
   },
   {
     n: '04',

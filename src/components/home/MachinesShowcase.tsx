@@ -1,35 +1,34 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { IconArrow } from '@/components/ui/Icons'
 
-const categories = [
+const tiers = [
   {
-    image: '/images/bl1510.webp',
-    tag: 'Dla małych i średnich zakładów',
-    title: 'Kompaktowe z pełną obudową',
-    desc: 'Maszyna stoi w hali produkcyjnej - bez osobnej kabiny, bez wyciągu. Pole robocze do 1500×1000 mm.',
-    href: '/modele#Kompaktowe',
+    image: '/images/spawarka-1500w-double-double.jpg',
+    power: '1500W',
+    tag: 'Wejście w technologię',
+    title: 'Blink 1500W — start z laserem',
+    desc: 'Stal węglowa do 10 mm, nierdzewka do 6 mm, aluminium do 4 mm. Idealny wybór dla zakładów przechodzących z TIG/MIG na spawanie laserowe.',
+    priceFrom: '39 000',
+    href: '/modele#1500W',
   },
   {
-    image: '/images/bl3015l.jpg',
-    tag: 'Do ciągłej produkcji seryjnej',
-    title: 'Przemysłowe - arkusz 3×1,5 m',
-    desc: 'Standardowy arkusz blachy w całości. Stal, nierdzewka i aluminium do 30 mm grubości.',
-    href: '/modele#Przemys%C5%82owe-otwarte',
+    image: '/images/spawarka-2000w-double-double.jpg',
+    power: '2000W',
+    tag: 'Najczęściej wybierany',
+    title: 'Blink 2000W — produkcja codzienna',
+    desc: 'Stal węglowa do 12 mm, nierdzewka do 8 mm, aluminium do 6 mm. Optymalny balans mocy, prędkości i ceny dla regularnej produkcji metalowej.',
+    priceFrom: '45 000',
+    href: '/modele#2000W',
+    highlight: true,
   },
   {
-    image: '/images/bl3015s.jpg',
-    tag: 'Najwyższa przepustowość',
-    title: 'Przemysłowe z wymianą stołu',
-    desc: 'Automatyczna wymiana stołu - załadunek i rozładunek bez przerywania cięcia. Praca ciągła.',
-    href: '/modele#Przemys%C5%82owe-zabudowane',
-  },
-  {
-    image: '/images/bl220g.jpg',
-    tag: 'Rury, kształtowniki, kątowniki',
-    title: 'Dedykowane do cięcia rur',
-    desc: 'Rury okrągłe, kwadratowe, prostokątne i kątowniki - precyzja 0,05 mm, krawędź bez szlifowania.',
-    href: '/modele#Do-rur-i-profili',
+    image: '/images/spawarka-3000w-double-double.jpg',
+    power: '3000W',
+    tag: 'Intensywna produkcja',
+    title: 'Blink 3000W — heavy-duty',
+    desc: 'Stal węglowa do 20 mm, nierdzewka do 12 mm, aluminium do 10 mm. Dla zakładów pracujących na dwie zmiany z grubymi elementami stalowymi.',
+    priceFrom: '54 000',
+    href: '/modele#3000W',
   },
 ]
 
@@ -38,52 +37,75 @@ export function MachinesShowcase() {
     <section className="py-20" style={{ backgroundColor: 'var(--bg)' }}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-10">
+          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--accent)' }}>
+            Dobór modelu
+          </p>
           <h2 className="text-2xl md:text-3xl font-black mb-2" style={{ letterSpacing: '-0.02em' }}>
-            Jakiej maszyny szukasz?
+            Jakiej mocy potrzebujesz?
           </h2>
           <p style={{ color: 'var(--muted)' }}>
-            Dobór zależy od tego co tniesz, w jakiej ilości i ile masz miejsca w hali.
+            Dobór zależy od grubości materiału, miesięcznego wolumenu i rodzaju spawanego metalu.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-5">
-          {categories.map((cat) => (
+        <div className="grid sm:grid-cols-3 gap-5">
+          {tiers.map((tier) => (
             <Link
-              key={cat.title}
-              href={cat.href}
-              className="group relative rounded-[var(--radius-lg)] overflow-hidden border transition-all duration-200 hover:shadow-[var(--shadow-lg)] hover:-translate-y-0.5"
-              style={{ borderColor: 'var(--border)', backgroundColor: 'var(--bg-card)' }}
+              key={tier.power}
+              href={tier.href}
+              className="group relative rounded-2xl overflow-hidden border transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5 flex flex-col"
+              style={{
+                borderColor: tier.highlight ? '#06B6D4' : 'var(--border)',
+                backgroundColor: 'var(--bg-card)',
+              }}
             >
+              {tier.highlight && (
+                <div
+                  className="text-center text-[10px] font-black uppercase tracking-widest py-1"
+                  style={{ backgroundColor: '#06B6D4', color: '#0D1117' }}
+                >
+                  Najpopularniejszy
+                </div>
+              )}
+
               {/* Image */}
-              <div className="relative overflow-hidden" style={{ height: '220px' }}>
+              <div className="relative overflow-hidden" style={{ height: '200px', backgroundColor: '#F7F8FC' }}>
                 <Image
-                  src={cat.image}
-                  alt={cat.title}
+                  src={tier.image}
+                  alt={`Spawarka laserowa Blink ${tier.power}`}
                   fill
-                  sizes="(max-width: 640px) 100vw, 50vw"
-                  className="object-contain p-6 transition-transform duration-300 group-hover:scale-[1.03]"
-                  style={{ backgroundColor: 'var(--bg-card)' }}
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                  className="object-contain p-6 transition-transform duration-300 group-hover:scale-105"
                 />
-                {/* Tag pill */}
                 <div
                   className="absolute top-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-full"
-                  style={{ backgroundColor: 'rgba(6,182,212,0.15)', color: 'var(--accent)', border: '1px solid rgba(255,165,47,0.25)' }}
+                  style={{ backgroundColor: 'rgba(6,182,212,0.12)', color: '#06B6D4', border: '1px solid rgba(6,182,212,0.25)' }}
                 >
-                  {cat.tag}
+                  {tier.tag}
                 </div>
               </div>
 
               {/* Text */}
-              <div className="p-5 border-t" style={{ borderColor: 'var(--border)' }}>
-                <h3 className="font-black text-base mb-1.5" style={{ letterSpacing: '-0.01em' }}>{cat.title}</h3>
-                <p className="text-sm leading-relaxed mb-4" style={{ color: 'var(--muted)' }}>{cat.desc}</p>
-                <span
-                  className="inline-flex items-center gap-1.5 text-sm font-bold transition-colors duration-150"
-                  style={{ color: 'var(--accent)' }}
+              <div className="p-5 border-t flex-1 flex flex-col" style={{ borderColor: 'var(--border)' }}>
+                <div
+                  className="text-xs font-black mb-2 px-2 py-0.5 rounded-full self-start"
+                  style={{ backgroundColor: 'var(--bg)', color: 'var(--muted)', border: '1px solid var(--border)' }}
                 >
-                  Zobacz modele
-                  <IconArrow size={13} />
-                </span>
+                  {tier.power}
+                </div>
+                <h3 className="font-black text-base mb-2" style={{ letterSpacing: '-0.02em' }}>{tier.title}</h3>
+                <p className="text-sm leading-relaxed mb-4 flex-1" style={{ color: 'var(--muted)' }}>{tier.desc}</p>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-[10px] uppercase tracking-widest" style={{ color: 'var(--muted-light)' }}>od</p>
+                    <p className="text-lg font-black" style={{ fontFamily: 'var(--font-rubik)', color: 'var(--fg)' }}>
+                      {tier.priceFrom} <span className="text-xs font-normal" style={{ color: 'var(--muted)' }}>zł netto</span>
+                    </p>
+                  </div>
+                  <span className="text-sm font-bold transition-colors duration-150" style={{ color: '#06B6D4' }}>
+                    Zobacz →
+                  </span>
+                </div>
               </div>
             </Link>
           ))}

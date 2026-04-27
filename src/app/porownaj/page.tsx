@@ -3,62 +3,60 @@ import Link from 'next/link'
 import { ComparisonTable } from '@/components/compare/ComparisonTable'
 
 export const metadata: Metadata = {
-  title: 'Porównanie spawarek laserowych - Laser vs Plazma, Kompaktowe vs Przemysłowe',
+  title: 'Porównanie spawarek laserowych — laser vs TIG, MIG, moc 1500–3000W',
   description:
-    'Tabele porównawcze spawarek laserowych: kompaktowe vs przemysłowe, 1500W–12000W, laser światłowodowy vs plazmowy. Niezależna analiza.',
+    'Tabele porównawcze: spawarka laserowa vs TIG/MIG, pojedyncza vs podwójna oscylacja, dobór mocy 1500–3000W. Niezależna analiza dla firm produkcyjnych.',
 }
 
-const COMPACT_VS_INDUSTRIAL_ROWS = [
-  { label: 'Pole robocze', values: ['do 1500×1000 mm', '3000×1500 mm'] },
-  { label: 'Maks. grubość stali', values: ['22 mm', '30 mm'] },
-  { label: 'Pełna obudowa', values: [true, false] },
-  { label: 'Wymienny stół (opcja)', values: [false, true] },
-  { label: 'Cena od (netto)', values: ['150 000 PLN', '159 000 PLN'], highlight: true },
-  { label: 'Wymagana powierzchnia hali', values: ['ok. 20 m²', 'ok. 60 m²'] },
-  {
-    label: 'Idealna dla',
-    values: [
-      'rzemiosło, CNC on-demand, edukacja',
-      'seryjne cięcie, konstrukcje, outsourcing',
-    ],
-  },
+const LASER_VS_TIG_MIG_ROWS = [
+  { label: 'Prędkość spawania', values: ['2–5× szybciej', 'wolniejszy TIG', 'szybszy MIG, niższy estetyka'] },
+  { label: 'Strefa wpływu ciepła', values: ['minimalna', 'wysoka', 'umiarkowana'] },
+  { label: 'Odkształcenia', values: ['brak / znikome', 'duże', 'umiarkowane'] },
+  { label: 'Jakość spoiny', values: ['gotowa, bez szlifowania', 'wymaga obróbki', 'wymaga szlifowania'] },
+  { label: 'Materiały', values: ['stal, nierdzewna, aluminium', 'stal, nierdzewna, alu', 'stal, nierdzewna'] },
+  { label: 'Koszt zakupu', values: ['39–60 tys. PLN netto', '5–30 tys. PLN', '10–50 tys. PLN'], highlight: true },
+  { label: 'Koszt gazu osłonowego', values: ['argon ~1 l/min', 'argon ~10 l/min', 'mieszanka ~15 l/min'] },
+  { label: 'Czas szkolenia operatora', values: ['1–3 dni', '6–24 miesiące', '2–6 miesięcy'] },
 ]
 
-const LASER_VS_PLASMA_ROWS = [
-  { label: 'Precyzja cięcia', values: ['± 0,05 mm', '± 0,5–2 mm'] },
-  { label: 'Jakość krawędzi', values: ['gotowa, bez szlifowania', 'wymaga wykończenia'] },
-  { label: 'Cena zakupu', values: ['150 000–400 000 PLN', '30 000–80 000 PLN'], highlight: true },
-  { label: 'Koszt eksploatacji', values: ['niższy przy gr. do 12 mm', 'niższy przy gr. 15 mm+'] },
-  { label: 'Materiały', values: ['stal, nierdzewna, alu, mosiądz, miedź', 'głównie stal węglowa'] },
-  { label: 'Hałas pracy', values: ['niski', 'wysoki'] },
-  { label: 'Wymagania wentylacyjne', values: ['filtr lub odciąg', 'odciąg obowiązkowy'] },
-  { label: 'Amortyzacja', values: ['5–8 lat (pełna produkcja)', '3–5 lat'] },
+const OSCILLATION_ROWS = [
+  { label: 'Szerokość spoiny', values: ['wąska, precyzyjna', 'szersza, lepsza fuzja'] },
+  { label: 'Estetyka spoiny', values: ['dobra', 'bardzo dobra / łuskowana'] },
+  { label: 'Porowatość', values: ['standardowa', 'niższa'] },
+  { label: 'Idealne dla', values: ['stal węglowa, proste złącza', 'nierdzewka, aluminium, złącza widoczne'] },
+  { label: 'Cena vs. wariant podstawowy', values: ['podstawa', '+3 000 PLN netto'], highlight: true },
+]
+
+const FEEDER_ROWS = [
+  { label: 'Liczba szpul', values: ['1', '2 jednocześnie'] },
+  { label: 'Zmiana drutu', values: ['zatrzymanie, ręczna wymiana', 'przełączenie w panelu'] },
+  { label: 'Praca z mieszanymi materiałami', values: ['ograniczona', 'stal + nierdzewka bez przerwy'] },
+  { label: 'Ciągłość długich sesji', values: ['przerwy na wymianę szpuli', 'praca ciągła'] },
+  { label: 'Cena vs. wariant podstawowy', values: ['podstawa', '+3 000 PLN netto'], highlight: true },
 ]
 
 const POWER_CARDS = [
   {
     power: '1500W',
-    label: 'Entry level',
+    label: 'Wejście w technologię',
+    priceFrom: '39 000',
     description:
-      'Stal do 10 mm, nierdzewna do 8 mm. Najniższy koszt zakupu i eksploatacji. Dobra opcja dla zakładów z umiarkowaną ilością zleceń.',
+      'Stal węglowa do 10 mm, nierdzewka do 6 mm, aluminium do 4 mm. Optymalny wybór dla zakładów przechodzących z TIG/MIG, przy umiarkowanym wolumenie produkcji.',
   },
   {
     power: '2000W',
-    label: 'Standard',
+    label: 'Najczęściej wybierany',
+    priceFrom: '45 000',
     description:
-      'Stal do 15 mm, nierdzewna do 10 mm. Złoty środek - większość zakładów nie potrzebuje więcej. Lepsza prędkość na cienkich materiałach.',
+      'Stal węglowa do 12 mm, nierdzewka do 8 mm, aluminium do 6 mm. Złoty środek — wyraźna przewaga prędkości nad 1500W, uzasadniona przy regularnej produkcji.',
+    highlight: true,
   },
   {
     power: '3000W',
-    label: 'Wydajny',
+    label: 'Intensywna produkcja',
+    priceFrom: '54 000',
     description:
-      'Stal do 20 mm, nierdzewna do 16 mm. Zauważalnie szybszy na materiałach do 6 mm. Wybór przy wyższym wolumenie produkcji.',
-  },
-  {
-    power: '6000W+',
-    label: 'Przemysłowy',
-    description:
-      'Stal do 30 mm, nierdzewna do 25 mm. Maksymalna prędkość na cienkich blachach, najniższy koszt/szt. przy serii. Uzasadniony przy 2+ zmianach.',
+      'Stal węglowa do 20 mm, nierdzewka do 12 mm, aluminium do 10 mm. Maksymalna moc ręczna — wybór przy pracy dwuzmianowej i grubych elementach.',
   },
 ]
 
@@ -67,31 +65,37 @@ const USE_CASE_ROWS = [
     profile: 'Mały zakład ślusarski',
     volume: 'do 50 zleceń/mies.',
     materials: 'stal do 8 mm',
-    recommendation: 'BL1510 2000W',
+    recommendation: 'BLS1500 — pojedyncza oscylacja',
   },
   {
-    profile: 'CNC on-demand / prototypy',
-    volume: 'do 100 zleceń/mies.',
-    materials: 'stal, alu, nierdzewna do 10 mm',
-    recommendation: 'BL1510 3000W',
+    profile: 'Producent mebli metalowych',
+    volume: '50–150 zleceń/mies.',
+    materials: 'nierdzewka, aluminium do 5 mm',
+    recommendation: 'BLS1500 lub BLS2000 — podwójna oscylacja',
   },
   {
-    profile: 'Producent konstrukcji',
+    profile: 'Producent konstrukcji stalowych',
+    volume: '100+ zleceń/mies.',
+    materials: 'stal węglowa do 12 mm',
+    recommendation: 'BLS2000 — podwójny podajnik',
+  },
+  {
+    profile: 'Automotive / uchwyty, wsporniki',
+    volume: 'seria powtarzalna',
+    materials: 'stal, nierdzewka do 6 mm',
+    recommendation: 'BLS2000 — podwójna oscylacja + podwójny podajnik',
+  },
+  {
+    profile: 'HVAC, kanały, kołnierze',
     volume: '200+ zleceń/mies.',
+    materials: 'nierdzewka 1–4 mm',
+    recommendation: 'BLS2000 — podwójna oscylacja',
+  },
+  {
+    profile: 'Produkcja ciężka, stal gruba',
+    volume: 'dwie zmiany',
     materials: 'stal do 20 mm',
-    recommendation: 'BL3015L 3000–6000W',
-  },
-  {
-    profile: 'Producent z rurami/profilami',
-    volume: '200+ zleceń/mies.',
-    materials: 'stal, rury, profile',
-    recommendation: 'BL3015GL lub BL220G',
-  },
-  {
-    profile: 'Maksymalna przepustowość',
-    volume: 'ciągła produkcja',
-    materials: 'stal do 30 mm',
-    recommendation: 'BL3015S 6000–12000W',
+    recommendation: 'BLS3000 — podwójny podajnik',
   },
 ]
 
@@ -101,10 +105,7 @@ export default function PorownajPage() {
       {/* Page header */}
       <div style={{ backgroundColor: '#0D1117' }} className="py-14">
         <div className="max-w-6xl mx-auto px-6">
-          <p
-            className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: '#06B6D4' }}
-          >
+          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#06B6D4' }}>
             Niezależna analiza
           </p>
           <h1
@@ -114,131 +115,110 @@ export default function PorownajPage() {
             Porównanie spawarek laserowych
           </h1>
           <p className="text-lg max-w-2xl" style={{ color: 'rgba(255,255,255,0.55)' }}>
-            Niezależne tabele porównawcze - specyfikacje techniczne, zakresy cenowe i rekomendacje
-            dla różnych profili produkcji.
+            Laser vs TIG vs MIG, pojedyncza vs podwójna oscylacja, dobór mocy 1500–3000W.
+            Niezależne tabele dla firm produkcyjnych.
           </p>
         </div>
       </div>
 
       <div className="max-w-6xl mx-auto px-6 py-16 flex flex-col gap-16">
 
-        {/* Section 1: Compact vs Industrial */}
+        {/* Section 1: Laser vs TIG vs MIG */}
         <section>
-          <p
-            className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: 'var(--muted)' }}
-          >
-            Sekcja 1
-          </p>
+          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: 'var(--muted)' }}>Sekcja 1</p>
           <ComparisonTable
-            title="Kompaktowe vs. Przemysłowe - kluczowe parametry"
-            headers={['Parametr', 'Kompaktowe (BL1313–1510)', 'Przemysłowe (BL3015)']}
-            rows={COMPACT_VS_INDUSTRIAL_ROWS}
-            footnote="(*) BL3015S ma pełną obudowę. BL3015L i BL3015GL są otwarte."
+            title="Spawarka laserowa vs TIG vs MIG — kluczowe parametry"
+            headers={['Kryterium', 'Laser światłowodowy', 'TIG (WIG)', 'MIG/MAG']}
+            rows={LASER_VS_TIG_MIG_ROWS}
+            footnote="Ceny orientacyjne netto. Koszt gazu osłonowego przy ciągłej pracy 8h/dzień."
           />
-          <p
-            className="mt-5 text-base leading-relaxed max-w-3xl"
-            style={{ color: 'var(--fg-secondary)' }}
-          >
-            Kompaktowe modele serii BL1313–1510 sprawdzają się w zakładach, gdzie liczy się
-            przestrzeń i elastyczność. Przemysłowe BL3015 to wybór dla produkcji seryjnej —
-            większe pole, grubsze materiały, opcja wymiennego stołu (BL3015S). Różnica cenowa na
-            starcie jest niewielka; decyduje profil i wolumen produkcji.
+          <p className="mt-5 text-base leading-relaxed max-w-3xl" style={{ color: 'var(--fg-secondary)' }}>
+            Laser wygrywa prędkością i estetyką spoiny — zwłaszcza na nierdzewce i aluminium.
+            TIG pozostaje uzasadniony przy pracach artystycznych i bardzo cienkich materiałach (poniżej 0,5 mm).
+            MIG jest tańszy w zakupie, ale wyższe koszty gazu, szlifowania i czasu operatora zniwelują różnicę w 2–3 lata.
           </p>
         </section>
 
-        {/* Section 2: Laser vs Plasma */}
+        {/* Section 2: Oscillation */}
         <section>
-          <p
-            className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: 'var(--muted)' }}
-          >
-            Sekcja 2
-          </p>
+          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: 'var(--muted)' }}>Sekcja 2</p>
           <ComparisonTable
-            title="Laser światłowodowy vs. Cięcie plazmowe"
-            headers={['Kryterium', 'Laser światłowodowy (fiber)', 'Cięcie plazmowe']}
-            rows={LASER_VS_PLASMA_ROWS}
+            title="Pojedyncza vs podwójna oscylacja głowicy"
+            headers={['Kryterium', 'Pojedyncza oscylacja', 'Podwójna oscylacja']}
+            rows={OSCILLATION_ROWS}
           />
-          <p
-            className="mt-5 text-base leading-relaxed max-w-3xl"
-            style={{ color: 'var(--fg-secondary)' }}
-          >
-            Laser wygrywa wszędzie tam, gdzie liczy się precyzja, różnorodność materiałów i jakość
-            krawędzi bez dodatkowej obróbki. Plazma pozostaje uzasadniona przy grubej stali węglowej
-            (15 mm+) i niskim budżecie inwestycyjnym. Przy typowej produkcji ślusarskiej do 10 mm —
-            laser zwraca się szybciej niż wynikałoby to z wyższej ceny zakupu.
+          <p className="mt-5 text-base leading-relaxed max-w-3xl" style={{ color: 'var(--fg-secondary)' }}>
+            Podwójna oscylacja to wiązka poruszająca się jednocześnie w dwóch osiach.
+            Spoina jest szersza i lepiej wtopiona — mniejsza porowatość, lepsza estetyka.
+            Przy spawaniu stali nierdzewnej i aluminium podwójna oscylacja daje wyraźnie lepszy wynik.
+            Różnica cenowa wynosi ok. 3 000 PLN netto — zwraca się szybko przy zleceniach wymagających wysokiej estetyki.
           </p>
         </section>
 
-        {/* Section 3: Power selection cards */}
+        {/* Section 3: Feeder */}
         <section>
-          <p
-            className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: 'var(--muted)' }}
-          >
-            Sekcja 3
+          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: 'var(--muted)' }}>Sekcja 3</p>
+          <ComparisonTable
+            title="Pojedynczy vs podwójny podajnik drutu"
+            headers={['Kryterium', 'Pojedynczy podajnik', 'Podwójny podajnik']}
+            rows={FEEDER_ROWS}
+          />
+          <p className="mt-5 text-base leading-relaxed max-w-3xl" style={{ color: 'var(--fg-secondary)' }}>
+            Podwójny podajnik to dwie szpule drutu załadowane jednocześnie.
+            Operator przełącza się między nimi bez przerywania pracy — szczególnie przydatne przy produkcji mieszanej
+            (np. stal węglowa i nierdzewna w jednej sesji) lub przy długich sesjach wymagających ciągłości.
           </p>
-          <h2
-            className="text-xl font-black mb-6"
-            style={{ letterSpacing: '-0.01em', fontFamily: 'var(--font-rubik)' }}
-          >
-            Dobór mocy lasera
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        </section>
+
+        {/* Section 4: Power selection */}
+        <section>
+          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: 'var(--muted)' }}>Sekcja 4</p>
+          <h2 className="text-xl font-black mb-6" style={{ letterSpacing: '-0.01em' }}>Dobór mocy spawarki</h2>
+          <div className="grid sm:grid-cols-3 gap-4">
             {POWER_CARDS.map((card) => (
               <div
                 key={card.power}
-                className="rounded-[var(--radius-md)] p-5 border flex flex-col gap-3"
+                className="rounded-xl p-5 border flex flex-col gap-3"
                 style={{
                   backgroundColor: 'var(--bg-card)',
-                  borderColor: 'var(--border)',
+                  borderColor: card.highlight ? '#06B6D4' : 'var(--border)',
                 }}
               >
-                <div className="flex flex-col gap-1">
+                {card.highlight && (
+                  <div
+                    className="text-[10px] font-black uppercase tracking-widest text-center py-0.5 rounded-full -mt-1"
+                    style={{ backgroundColor: 'rgba(6,182,212,0.12)', color: '#06B6D4' }}
+                  >
+                    Najczęściej wybierany
+                  </div>
+                )}
+                <div className="flex items-center gap-2">
                   <span
-                    className="inline-block self-start text-sm font-black px-2.5 py-1 rounded-full"
-                    style={{ backgroundColor: '#06B6D4', color: '#fff' }}
+                    className="text-sm font-black px-2.5 py-0.5 rounded-full"
+                    style={{ backgroundColor: '#06B6D4', color: '#0D1117' }}
                   >
                     {card.power}
                   </span>
-                  <span
-                    className="text-xs font-bold uppercase tracking-wider"
-                    style={{ color: 'var(--muted)' }}
-                  >
+                  <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--muted)' }}>
                     {card.label}
                   </span>
                 </div>
-                <p className="text-sm leading-relaxed" style={{ color: 'var(--fg-secondary)' }}>
+                <p className="text-sm leading-relaxed flex-1" style={{ color: 'var(--fg-secondary)' }}>
                   {card.description}
+                </p>
+                <p className="text-xs font-semibold" style={{ color: 'var(--muted)' }}>
+                  od <span className="text-base font-black" style={{ color: 'var(--fg)', fontFamily: 'var(--font-rubik)' }}>{card.priceFrom}</span> zł netto
                 </p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Section 4: For whom / use cases */}
+        {/* Section 5: Use cases */}
         <section>
-          <p
-            className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: 'var(--muted)' }}
-          >
-            Sekcja 4
-          </p>
-          <h2
-            className="text-xl font-black mb-4"
-            style={{ letterSpacing: '-0.01em', fontFamily: 'var(--font-rubik)' }}
-          >
-            Dla kogo co?
-          </h2>
-          <div
-            style={{
-              overflowX: 'auto',
-              borderRadius: 'var(--radius-md)',
-              border: '1px solid var(--border)',
-              boxShadow: '0 1px 3px rgba(0,0,0,0.06)',
-            }}
-          >
+          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: 'var(--muted)' }}>Sekcja 5</p>
+          <h2 className="text-xl font-black mb-4" style={{ letterSpacing: '-0.01em' }}>Dla kogo który model?</h2>
+          <div style={{ overflowX: 'auto', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
               <thead>
                 <tr>
@@ -253,7 +233,6 @@ export default function PorownajPage() {
                         padding: '0.875rem 1rem',
                         textAlign: 'left',
                         whiteSpace: 'nowrap',
-                        letterSpacing: '0.01em',
                       }}
                     >
                       {header}
@@ -263,59 +242,23 @@ export default function PorownajPage() {
               </thead>
               <tbody>
                 {USE_CASE_ROWS.map((row, rowIdx) => (
-                  <tr
-                    key={rowIdx}
-                    style={{
-                      backgroundColor: rowIdx % 2 === 0 ? 'var(--bg-card)' : 'var(--bg)',
-                    }}
-                  >
-                    <td
-                      style={{
-                        fontWeight: 500,
-                        fontSize: '0.875rem',
-                        padding: '0.75rem 1rem',
-                        borderTop: '1px solid var(--border)',
-                        color: 'var(--fg-secondary)',
-                        minWidth: '180px',
-                      }}
-                    >
+                  <tr key={rowIdx} style={{ backgroundColor: rowIdx % 2 === 0 ? 'var(--bg-card)' : 'var(--bg)' }}>
+                    <td style={{ fontWeight: 500, fontSize: '0.875rem', padding: '0.75rem 1rem', borderTop: '1px solid var(--border)', color: 'var(--fg-secondary)', minWidth: '180px' }}>
                       {row.profile}
                     </td>
-                    <td
-                      style={{
-                        fontSize: '0.875rem',
-                        padding: '0.75rem 1rem',
-                        borderTop: '1px solid var(--border)',
-                        color: 'var(--fg)',
-                        whiteSpace: 'nowrap',
-                      }}
-                    >
+                    <td style={{ fontSize: '0.875rem', padding: '0.75rem 1rem', borderTop: '1px solid var(--border)', color: 'var(--fg)', whiteSpace: 'nowrap' }}>
                       {row.volume}
                     </td>
-                    <td
-                      style={{
-                        fontSize: '0.875rem',
-                        padding: '0.75rem 1rem',
-                        borderTop: '1px solid var(--border)',
-                        color: 'var(--fg)',
-                      }}
-                    >
+                    <td style={{ fontSize: '0.875rem', padding: '0.75rem 1rem', borderTop: '1px solid var(--border)', color: 'var(--fg)' }}>
                       {row.materials}
                     </td>
-                    <td
-                      style={{
-                        fontSize: '0.875rem',
-                        padding: '0.75rem 1rem',
-                        borderTop: '1px solid var(--border)',
-                      }}
-                    >
+                    <td style={{ fontSize: '0.875rem', padding: '0.75rem 1rem', borderTop: '1px solid var(--border)' }}>
                       <Link
                         href="/modele"
                         className="font-bold hover:opacity-70 transition-opacity inline-flex items-center gap-1"
                         style={{ color: '#06B6D4' }}
                       >
-                        {row.recommendation}
-                        <span aria-hidden="true">→</span>
+                        {row.recommendation} →
                       </Link>
                     </td>
                   </tr>
@@ -331,15 +274,11 @@ export default function PorownajPage() {
           style={{ backgroundColor: '#0D1117' }}
         >
           <div className="flex-1">
-            <p
-              className="text-lg font-black text-white mb-2"
-              style={{ fontFamily: 'var(--font-rubik)' }}
-            >
-              Potrzebujesz porównania dla swojego case&apos;u?
+            <p className="text-lg font-black text-white mb-2" style={{ fontFamily: 'var(--font-rubik)' }}>
+              Nie wiesz który wariant wybrać?
             </p>
             <p className="text-sm" style={{ color: 'rgba(255,255,255,0.5)' }}>
-              Opisz swoją produkcję - przygotujemy zestawienie dopasowane do Twojego wolumenu i
-              materiałów.
+              Opisz co spawasz, grubość materiału i miesięczny wolumen — dobierzemy model z uzasadnieniem.
             </p>
           </div>
           <Link

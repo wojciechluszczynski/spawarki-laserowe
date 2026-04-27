@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 
 type RawVariant = {
   power: string
+  oscillation: string
+  feeder: string
   priceNet: number
   priceGross: number
   bestseller: boolean
@@ -39,6 +41,8 @@ function flattenVariants(products: RawProduct[]): ProductVariant[] {
         image: p.image,
         workArea: p.workArea,
         power: v.power,
+        oscillation: v.oscillation,
+        feeder: v.feeder,
         priceNet: v.priceNet,
         priceGross: v.priceGross,
         bestseller: v.bestseller,

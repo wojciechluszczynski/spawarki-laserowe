@@ -7,7 +7,7 @@ export function Hero() {
       {/* Background machine - full bleed, dark overlay */}
       <div className="absolute inset-0">
         <Image
-          src="/images/bl3015s.jpg"
+          src="/images/spawarka-2000w-double-double.jpg"
           alt="Spawarka laserowa fiber"
           fill
           priority
