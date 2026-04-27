@@ -23,9 +23,9 @@ function fmt(n: number) {
 const powerColors: Record<string, { bg: string; text: string }> = {
   '1500W': { bg: '#F0F0F0', text: '#3D3D3D' },
   '2000W': { bg: '#E5E7EB', text: '#1F2937' },
-  '3000W': { bg: '#FFF5E6', text: '#FFA52F' },
-  '6000W': { bg: '#1B2332', text: '#FFA52F' },
-  '12000W': { bg: '#0D1117', text: '#FFA52F' },
+  '3000W': { bg: '#ECFEFF', text: '#06B6D4' },
+  '6000W': { bg: '#1B2332', text: '#06B6D4' },
+  '12000W': { bg: '#0D1117', text: '#06B6D4' },
 }
 
 export function VariantCard({ variant }: { variant: ProductVariant }) {

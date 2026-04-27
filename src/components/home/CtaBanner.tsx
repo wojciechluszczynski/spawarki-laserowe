@@ -9,11 +9,11 @@ export function CtaBanner() {
           style={{ backgroundColor: '#0D1117' }}
         >
           {/* Decorative */}
-          <div className="absolute -top-12 -right-12 w-56 h-56 rounded-full opacity-5" style={{ backgroundColor: '#FFA52F' }} />
-          <div className="absolute bottom-0 left-1/4 w-40 h-40 rounded-full opacity-5" style={{ backgroundColor: '#FFA52F' }} />
+          <div className="absolute -top-12 -right-12 w-56 h-56 rounded-full opacity-5" style={{ backgroundColor: '#06B6D4' }} />
+          <div className="absolute bottom-0 left-1/4 w-40 h-40 rounded-full opacity-5" style={{ backgroundColor: '#06B6D4' }} />
 
           <div className="relative max-w-lg">
-            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#FFA52F' }}>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#06B6D4' }}>
               Bezpłatna konsultacja
             </p>
             <h2 className="text-2xl md:text-3xl font-black mb-3 text-white" style={{ letterSpacing: '-0.02em' }}>
@@ -28,7 +28,7 @@ export function CtaBanner() {
             <Link
               href="/kontakt"
               className="inline-flex items-center gap-2 font-black px-6 py-3 rounded-[var(--radius-md)] transition-all duration-150 hover:opacity-90 active:scale-[0.98]"
-              style={{ backgroundColor: '#FFA52F', color: '#0D1117' }}
+              style={{ backgroundColor: '#06B6D4', color: '#0D1117' }}
             >
               Zapytaj eksperta
             </Link>

@@ -13,7 +13,7 @@ export default function KontaktPage() {
       {/* Page header */}
       <div style={{ backgroundColor: '#0D1117' }} className="py-14">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#FFA52F' }}>
+          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#06B6D4' }}>
             Katalog spawarek laserowych BLink Laser
           </p>
           <h1
@@ -51,7 +51,7 @@ export default function KontaktPage() {
               className="rounded-[var(--radius-lg)] p-6"
               style={{ backgroundColor: '#0D1117' }}
             >
-              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#FFA52F' }}>
+              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#06B6D4' }}>
                 Telefon
               </p>
               <a
@@ -102,7 +102,7 @@ export default function KontaktPage() {
                   'Przybliżony budżet inwestycji',
                 ].map((item) => (
                   <li key={item} className="flex gap-2.5 text-sm" style={{ color: 'var(--fg-secondary)' }}>
-                    <span className="mt-0.5 shrink-0 w-4 h-4 rounded-full flex items-center justify-center text-[10px] font-black" style={{ backgroundColor: 'rgba(255,165,47,0.15)', color: '#FFA52F' }}>
+                    <span className="mt-0.5 shrink-0 w-4 h-4 rounded-full flex items-center justify-center text-[10px] font-black" style={{ backgroundColor: 'rgba(6,182,212,0.15)', color: '#06B6D4' }}>
                       ✓
                     </span>
                     {item}

@@ -67,7 +67,7 @@ export function MachinesShowcase() {
                 {/* Tag pill */}
                 <div
                   className="absolute top-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-full"
-                  style={{ backgroundColor: 'rgba(255,165,47,0.15)', color: 'var(--accent)', border: '1px solid rgba(255,165,47,0.25)' }}
+                  style={{ backgroundColor: 'rgba(6,182,212,0.15)', color: 'var(--accent)', border: '1px solid rgba(255,165,47,0.25)' }}
                 >
                   {cat.tag}
                 </div>

@@ -42,7 +42,7 @@ export function Header() {
             <a
               href="tel:+48570854886"
               className="flex items-center gap-1.5 font-bold transition-colors hover:opacity-80"
-              style={{ color: '#FFA52F' }}
+              style={{ color: '#06B6D4' }}
             >
               <IconPhone size={13} />
               +48 570 854 886
@@ -57,12 +57,12 @@ export function Header() {
           <Link href="/" className="flex items-center gap-2.5 shrink-0 transition-opacity hover:opacity-85" onClick={() => setOpen(false)}>
             <span
               className="flex items-center justify-center w-9 h-9 rounded-[var(--radius-md)]"
-              style={{ backgroundColor: '#0D1117', color: '#FFA52F' }}
+              style={{ backgroundColor: '#0D1117', color: '#06B6D4' }}
             >
               <IconLaser size={17} />
             </span>
             <span className="font-black text-[15px] tracking-tight" style={{ fontFamily: 'var(--font-rubik)', color: '#0D1117' }}>
-              Spawarki<span style={{ color: '#FFA52F' }}>Laserowe</span>
+              Spawarki<span style={{ color: '#06B6D4' }}>Laserowe</span>
             </span>
           </Link>
 
@@ -77,7 +77,7 @@ export function Header() {
                   className="px-3.5 py-2 rounded-[var(--radius-sm)] text-sm transition-all duration-150"
                   style={{
                     color: active ? '#0D1117' : '#6B7280',
-                    backgroundColor: active ? '#FFF5E6' : 'transparent',
+                    backgroundColor: active ? '#ECFEFF' : 'transparent',
                     fontWeight: active ? 700 : 500,
                   }}
                 >
@@ -91,7 +91,7 @@ export function Header() {
           <Link
             href="/modele"
             className="hidden md:inline-flex shrink-0 text-sm font-black px-5 py-2.5 rounded-[var(--radius-md)] transition-all duration-150 hover:opacity-90 active:scale-95"
-            style={{ backgroundColor: '#FFA52F', color: '#0D1117', boxShadow: '0 2px 10px rgba(255,165,47,0.35)' }}
+            style={{ backgroundColor: '#06B6D4', color: '#0D1117', boxShadow: '0 2px 10px rgba(255,165,47,0.35)' }}
           >
             Przeglądaj katalog
           </Link>
@@ -121,7 +121,7 @@ export function Header() {
                     className="px-4 py-3 rounded-[var(--radius-md)] text-sm font-medium transition-all"
                     style={{
                       color: active ? '#0D1117' : '#374151',
-                      backgroundColor: active ? '#FFF5E6' : 'transparent',
+                      backgroundColor: active ? '#ECFEFF' : 'transparent',
                       fontWeight: active ? 700 : 500,
                     }}
                   >
@@ -134,7 +134,7 @@ export function Header() {
                   href="/modele"
                   onClick={() => setOpen(false)}
                   className="flex items-center justify-center text-sm font-black py-3 rounded-[var(--radius-md)]"
-                  style={{ backgroundColor: '#FFA52F', color: '#0D1117' }}
+                  style={{ backgroundColor: '#06B6D4', color: '#0D1117' }}
                 >
                   Przeglądaj katalog
                 </Link>

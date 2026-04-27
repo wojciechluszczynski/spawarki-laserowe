@@ -43,7 +43,7 @@ export function WhyUs() {
             >
               <div
                 className="shrink-0 w-11 h-11 rounded-[var(--radius-md)] flex items-center justify-center font-black text-lg"
-                style={{ backgroundColor: '#FFF5E6', color: '#FFA52F', fontFamily: 'var(--font-rubik)' }}
+                style={{ backgroundColor: '#ECFEFF', color: '#06B6D4', fontFamily: 'var(--font-rubik)' }}
               >
                 {r.num}
               </div>

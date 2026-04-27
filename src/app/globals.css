@@ -2,10 +2,10 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  /* ── Primary — żółty/pomarańczowy ───────────── */
-  --accent:        #FFA52F;
-  --accent-hover:  #F09520;
-  --accent-subtle: #FFF5E6;
+  /* ── Primary — cyan/niebieski ───────────────── */
+  --accent:        #06B6D4;
+  --accent-hover:  #0891B2;
+  --accent-subtle: #ECFEFF;
 
   /* ── Dark ────────────────────────────────────── */
   --dark:          #0D1117;

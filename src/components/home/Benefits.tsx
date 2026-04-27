@@ -47,14 +47,14 @@ export function Benefits() {
             return (
               <li
                 key={b.title}
-                className="group flex flex-col gap-3 p-6 rounded-[var(--radius-lg)] border transition-all duration-200 hover:border-[#FFA52F] hover:shadow-[var(--shadow-md)] cursor-default"
+                className="group flex flex-col gap-3 p-6 rounded-[var(--radius-lg)] border transition-all duration-200 hover:border-[#06B6D4] hover:shadow-[var(--shadow-md)] cursor-default"
                 style={{ borderColor: 'var(--border)', backgroundColor: 'var(--bg)' }}
               >
                 <div
                   className="w-10 h-10 rounded-[var(--radius-md)] flex items-center justify-center transition-colors duration-200"
-                  style={{ backgroundColor: '#FFF5E6' }}
+                  style={{ backgroundColor: '#ECFEFF' }}
                 >
-                  <Icon size={18} style={{ color: '#FFA52F' }} />
+                  <Icon size={18} style={{ color: '#06B6D4' }} />
                 </div>
                 <p className="font-bold" style={{ color: 'var(--fg)' }}>{b.title}</p>
                 <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>{b.desc}</p>

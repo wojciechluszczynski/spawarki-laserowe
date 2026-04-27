@@ -49,7 +49,7 @@ export default async function PoradnikPage({
             <div className="absolute bottom-4 left-4">
               <span
                 className="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full"
-                style={{ backgroundColor: '#FFA52F', color: '#0D1117' }}
+                style={{ backgroundColor: '#06B6D4', color: '#0D1117' }}
               >
                 {post.category}
               </span>
@@ -60,7 +60,7 @@ export default async function PoradnikPage({
 
       <article>
         {!post.coverImage && post.category && (
-          <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#FFA52F' }}>
+          <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#06B6D4' }}>
             {post.category}
           </p>
         )}
@@ -86,7 +86,7 @@ export default async function PoradnikPage({
         className="mt-12 rounded-[var(--radius-lg)] p-7"
         style={{ backgroundColor: '#0D1117' }}
       >
-        <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: '#FFA52F' }}>
+        <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: '#06B6D4' }}>
           Gotowy na zakup?
         </p>
         <p className="font-black text-xl text-white mb-1" style={{ fontFamily: 'var(--font-rubik)' }}>
@@ -99,7 +99,7 @@ export default async function PoradnikPage({
           <Link
             href="/modele"
             className="inline-flex items-center gap-2 text-sm font-black px-5 py-2.5 rounded-[var(--radius-md)] transition-all hover:opacity-90"
-            style={{ backgroundColor: '#FFA52F', color: '#0D1117' }}
+            style={{ backgroundColor: '#06B6D4', color: '#0D1117' }}
           >
             Przeglądaj katalog
           </Link>
@@ -124,7 +124,7 @@ export default async function PoradnikPage({
               <Link
                 key={related.slug}
                 href={`/poradniki/${related.slug}`}
-                className="group flex flex-col gap-2 p-4 rounded-[var(--radius-md)] border transition-all hover:border-[#FFA52F] hover:shadow-[var(--shadow-sm)]"
+                className="group flex flex-col gap-2 p-4 rounded-[var(--radius-md)] border transition-all hover:border-[#06B6D4] hover:shadow-[var(--shadow-sm)]"
                 style={{ borderColor: 'var(--border)' }}
               >
                 {related.coverImage && (
@@ -132,7 +132,7 @@ export default async function PoradnikPage({
                     <Image src={related.coverImage} alt={related.title} fill className="object-cover" />
                   </div>
                 )}
-                <p className="text-sm font-semibold leading-snug group-hover:text-[#FFA52F] transition-colors" style={{ color: 'var(--fg)' }}>
+                <p className="text-sm font-semibold leading-snug group-hover:text-[#06B6D4] transition-colors" style={{ color: 'var(--fg)' }}>
                   {related.title}
                 </p>
               </Link>
@@ -146,7 +146,7 @@ export default async function PoradnikPage({
         <Link
           href="/poradniki"
           className="text-sm font-semibold hover:underline"
-          style={{ color: '#FFA52F' }}
+          style={{ color: '#06B6D4' }}
         >
           ← Wróć do poradników
         </Link>

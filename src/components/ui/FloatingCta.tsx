@@ -7,9 +7,9 @@ export function FloatingCta() {
         href="tel:+48570854886"
         className="group flex items-center gap-2.5 h-12 pl-4 pr-5 rounded-full shadow-lg transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5 active:scale-95"
         style={{
-          backgroundColor: '#FFA52F',
+          backgroundColor: '#06B6D4',
           color: '#0D1117',
-          boxShadow: '0 4px 20px rgba(255,165,47,0.4)',
+          boxShadow: '0 4px 20px rgba(6,182,212,0.4)',
         }}
         aria-label="Zadzwoń i dowiedz się więcej"
       >

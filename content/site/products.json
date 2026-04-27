@@ -1,75 +1,47 @@
 [
   {
-    "family": "SL1000H",
-    "name": "Ręczna SL1000H",
-    "image": "/images/sl1000h.jpg",
+    "family": "BLS1500",
+    "name": "Spawarka laserowa Blink 1500W",
+    "image": "/images/spawarka-1500w-double-double.jpg",
     "workArea": "Ręczna — bez ograniczenia pola roboczego",
-    "description": "Kompaktowa ręczna spawarka laserowa 1000W z wbudowanym chłodzeniem wodnym. Źródło Raycus, głowica z wymiennym kątem, sterownik dotykowy. Idealna dla małych zakładów i warsztatów wchodzących w technologię laser fiber.",
-    "materialThickness": { "stal": "8 mm", "nierdzewna": "5 mm", "aluminium": "3 mm" },
-    "variants": [
-      { "power": "1000W", "priceNet": 28000, "priceGross": 34440, "bestseller": false, "shopUrl": "#" }
-    ],
-    "highlights": ["Źródło Raycus — niska awaryjność, tanie części", "Wbudowana chłodnica wodna w zestawie", "Głowica wielofunkcyjna: spawanie, czyszczenie, lutowanie"]
-  },
-  {
-    "family": "SL1500H",
-    "name": "Ręczna SL1500H",
-    "image": "/images/sl1500h.jpg",
-    "workArea": "Ręczna — bez ograniczenia pola roboczego",
-    "description": "Popularna ręczna spawarka laserowa 1500W. Źródło Raycus, głowica autofokus z wymiennym kątem roboczym, sterownik cyfrowy. Polecana jako pierwsza maszyna laserowa w zakładzie — dobry balans mocy i ceny.",
+    "description": "Spawarka laserowa 4w1 Blink 1500W — spawanie, czyszczenie, hartowanie, lutowanie laserowe. Podwójny podajnik drutu i podwójna oscylacja głowicy dla wyższej jakości spoiny.",
     "materialThickness": { "stal": "10 mm", "nierdzewna": "6 mm", "aluminium": "4 mm" },
     "variants": [
-      { "power": "1500W", "priceNet": 38000, "priceGross": 46740, "bestseller": true, "shopUrl": "#" }
+      { "power": "1500W / pojedyncza oscylacja / pojedynczy podajnik", "priceNet": 39000, "priceGross": 47970, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-4w1-1500w-podwojna-oscylacja-pojedynczy-podajnik" },
+      { "power": "1500W / pojedyncza oscylacja / podwójny podajnik", "priceNet": 42000, "priceGross": 51660, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-1500w-4w1-pojedyncza-oscylacja-podwojny-podajnik" },
+      { "power": "1500W / podwójna oscylacja / pojedynczy podajnik", "priceNet": 42000, "priceGross": 51660, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-1500w-podwojna-oscylacja-pojedynczy-podajnik" },
+      { "power": "1500W / podwójna oscylacja / podwójny podajnik", "priceNet": 45000, "priceGross": 55350, "bestseller": true, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-1500w-podwojna-oscylacja-podwojny-podajnik" }
     ],
-    "highlights": ["Najpopularniejszy model — sprawdzony w setkach zakładów", "Głowica autofokus — praca na nierównych detalach bez regulacji", "Kompletny zestaw: przewody 10 m, drut spawalniczy, chłodnica"]
+    "highlights": ["4w1: spawanie, czyszczenie, hartowanie, lutowanie", "Podwójna oscylacja głowicy — szersza i silniejsza spoina", "Podwójny podajnik — dwa druty bez ręcznej wymiany"]
   },
   {
-    "family": "SL2000H",
-    "name": "Ręczna SL2000H",
-    "image": "/images/sl2000h.jpg",
+    "family": "BLS2000",
+    "name": "Spawarka laserowa Blink 2000W",
+    "image": "/images/spawarka-2000w-double-double.jpg",
     "workArea": "Ręczna — bez ograniczenia pola roboczego",
-    "description": "Zaawansowana ręczna spawarka laserowa 2000W do intensywnej produkcji. Źródło JPT lub Raycus, głowica z automatycznym systemem chłodzenia, prędkość spawania do 300 mm/s. Przeznaczona dla firm z wysokimi wymaganiami grubości i przepustowości.",
+    "description": "Spawarka laserowa 4w1 Blink 2000W — wyższa moc do grubszych materiałów i wyższej prędkości spawania. Podwójna oscylacja głowicy i podwójny podajnik drutu.",
     "materialThickness": { "stal": "12 mm", "nierdzewna": "8 mm", "aluminium": "6 mm" },
     "variants": [
-      { "power": "2000W", "priceNet": 65000, "priceGross": 79950, "bestseller": false, "shopUrl": "#" },
-      { "power": "2000W JPT", "priceNet": 75000, "priceGross": 92250, "bestseller": false, "shopUrl": "#" }
+      { "power": "2000W / pojedyncza oscylacja / pojedynczy podajnik", "priceNet": 45000, "priceGross": 55350, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-2000w-4w1-pojedyncza-oscylacja-pojedynczy-podajnik" },
+      { "power": "2000W / pojedyncza oscylacja / podwójny podajnik", "priceNet": 48000, "priceGross": 59040, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-2000w-4w1-pojedyncza-oscylacja-podwojny-podajnik" },
+      { "power": "2000W / podwójna oscylacja / pojedynczy podajnik", "priceNet": 48000, "priceGross": 59040, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-2000w-podwojna-oscylacja-pojedynczy-podajnik" },
+      { "power": "2000W / podwójna oscylacja / podwójny podajnik", "priceNet": 51000, "priceGross": 62730, "bestseller": true, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-2000w-podwojna-oscylacja-podwojny-podajnik" }
     ],
-    "highlights": ["Moc 2 kW — spawanie do 12 mm stali węglowej", "Źródło JPT lub Raycus do wyboru", "Prędkość do 300 mm/s — wysoka przepustowość przy produkcji seryjnej"]
+    "highlights": ["Moc 2 kW — spawanie stali węglowej do 12 mm", "Podwójna oscylacja — lepsza fuzja i mniejsza porowatość spoiny", "Najczęściej wybierany tier dla firm z regularną produkcją"]
   },
   {
-    "family": "SL3000H",
-    "name": "Ręczna SL3000H",
-    "image": "/images/sl3000h.jpg",
+    "family": "BLS3000",
+    "name": "Spawarka laserowa Blink 3000W",
+    "image": "/images/spawarka-3000w-double-double.jpg",
     "workArea": "Ręczna — bez ograniczenia pola roboczego",
-    "description": "Flagowa ręczna spawarka laserowa 3000W dla najbardziej wymagających zastosowań. Przeznaczona do spawania grubych elementów stalowych i aluminiowych w zakładach pracujących na dwie zmiany.",
+    "description": "Flagowa spawarka laserowa 4w1 Blink 3000W dla najbardziej wymagających zastosowań. Najwyższa moc w segmencie ręcznym — spawanie grubych elementów stalowych i aluminiowych.",
     "materialThickness": { "stal": "20 mm", "nierdzewna": "12 mm", "aluminium": "10 mm" },
     "variants": [
-      { "power": "3000W", "priceNet": 120000, "priceGross": 147600, "bestseller": false, "shopUrl": "#" }
+      { "power": "3000W / pojedyncza oscylacja / pojedynczy podajnik", "priceNet": 54000, "priceGross": 66420, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-3000w-4w1-pojedyncza-oscylacja-pojedynczy-podajnik" },
+      { "power": "3000W / pojedyncza oscylacja / podwójny podajnik", "priceNet": 57000, "priceGross": 70110, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-blink-3000w-4w1-pojedyncza-oscylacja-podwojny-podajnik" },
+      { "power": "3000W / podwójna oscylacja / pojedynczy podajnik", "priceNet": 57000, "priceGross": 70110, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-3000w-podwojna-oscylacja-pojedynczy-podajnik" },
+      { "power": "3000W / podwójna oscylacja / podwójny podajnik", "priceNet": 60000, "priceGross": 73800, "bestseller": false, "shopUrl": "https://sklep.blinklaser.com/spawarka-laserowa-4w1-blink-3000w-podwojna-oscylacja-podwojny-podajnik" }
     ],
-    "highlights": ["Moc 3 kW — najwyższa dostępna moc w segmencie ręcznym", "Grubość do 20 mm stali węglowej", "Przemysłowe chłodzenie wodne, przewody 15 m w zestawie"]
-  },
-  {
-    "family": "SL2000A",
-    "name": "Automatyczna SL2000A",
-    "image": "/images/sl2000a.jpg",
-    "workArea": "Stół roboczy 800 × 600 mm",
-    "description": "Automatyczna stacja spawalnicza z laserem 2000W. Stolik obrotowy z uchwytem trójszczękowym, programowalny sterownik CNC, powtarzalność 0,02 mm. Idealna do produkcji seryjnej standaryzowanych detali.",
-    "materialThickness": { "stal": "12 mm", "nierdzewna": "8 mm", "aluminium": "6 mm" },
-    "variants": [
-      { "power": "2000W", "priceNet": 180000, "priceGross": 221400, "bestseller": false, "shopUrl": "#" }
-    ],
-    "highlights": ["Stolik obrotowy z uchwytem trójszczękowym w zestawie", "Powtarzalność 0,02 mm — produkcja seryjna bez kontroli każdej sztuki", "Sterownik CNC z zapisem programów — szybkie przezbrojenie"]
-  },
-  {
-    "family": "SL3000A",
-    "name": "Automatyczna SL3000A",
-    "image": "/images/sl3000a.jpg",
-    "workArea": "Stół roboczy 1200 × 800 mm",
-    "description": "Przemysłowa automatyczna stacja spawalnicza z laserem 3000W i dużym polem roboczym. Podwójny stolik wymienny — ciągła produkcja bez przestoju. Przeznaczona dla zakładów pracujących na dwie i trzy zmiany.",
-    "materialThickness": { "stal": "20 mm", "nierdzewna": "12 mm", "aluminium": "10 mm" },
-    "variants": [
-      { "power": "3000W", "priceNet": 280000, "priceGross": 344400, "bestseller": false, "shopUrl": "#" }
-    ],
-    "highlights": ["Podwójny stolik wymienny — ciągła produkcja bez przestoju", "Pole robocze 1200 × 800 mm — duże detale bez przezbrajania", "Najniższy koszt jednostkowy spoiny przy dużych seriach"]
+    "highlights": ["Moc 3 kW — najwyższa dostępna w segmencie ręcznym", "Grubość do 20 mm stali węglowej", "Dla zakładów pracujących na dwie zmiany z wymagającymi materiałami"]
   }
 ]

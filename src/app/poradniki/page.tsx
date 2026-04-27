@@ -64,7 +64,7 @@ export default function PoradnikiPage() {
         <section key={tag} className="mb-14">
           <h2
             className="text-lg font-bold uppercase tracking-widest mb-6 pb-3 border-b"
-            style={{ color: '#FFA52F', borderColor: 'var(--border)' }}
+            style={{ color: '#06B6D4', borderColor: 'var(--border)' }}
           >
             {TAG_LABELS[tag]}
           </h2>

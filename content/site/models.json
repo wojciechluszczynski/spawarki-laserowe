@@ -4,23 +4,23 @@
     "name": "Model Ekonomiczny",
     "tier": "Podstawowy",
     "badge": "Dla mniejszych zakładów",
-    "image": "/images/model-ekonomiczny.jpg",
-    "summary": "Optymalny punkt wejścia dla firm, które regularnie spawają blachy do 3 mm i chcą uniezależnić się od podwykonawców bez nadmiernego zaangażowania kapitałowego. Ręczna spawarka laserowa, która płaci na siebie już przy kilkudziesięciu godzinach produkcji miesięcznie.",
+    "image": "/images/spawarka-1500w-double-single.jpg",
+    "summary": "Optymalny punkt wejścia dla firm, które regularnie spawają blachy do 5 mm i chcą uniezależnić się od podwykonawców. Spawarka laserowa 1500W 4w1, która płaci na siebie już przy kilkudziesięciu godzinach produkcji miesięcznie.",
     "idealFor": [
-      "firmy spawające stal węglową i nierdzewną do 3 mm",
+      "firmy spawające stal węglową i nierdzewną do 5–6 mm",
       "zakłady realizujące do 80 h spawania miesięcznie",
       "pierwsza maszyna laserowa w parku — wejście w technologię fiber"
     ],
     "advantages": [
       "eliminujesz zależność od podwykonawcy — zlecenie realizujesz własną maszyną następnego dnia",
-      "niski próg wejścia — ROI możliwy już w 2–3 lata przy regularnej produkcji",
+      "niski próg wejścia — ROI możliwy już w 1–2 lata przy regularnej produkcji",
       "prosta obsługa — operator po 1–2 dniach szkolenia samodzielnie prowadzi produkcję"
     ],
     "specs": {
       "power": "1,5 kW (fiber)",
-      "type": "Ręczna (handheld)",
+      "type": "Ręczna 4w1 (spawanie, czyszczenie, hartowanie, lutowanie)",
       "speed": "do 200 mm/s (cienkie blachy)",
-      "materialThickness": "stal węglowa do 8 mm · nierdzewna do 5 mm · aluminium do 4 mm"
+      "materialThickness": "stal węglowa do 10 mm · nierdzewna do 6 mm · aluminium do 4 mm"
     }
   },
   {
@@ -28,21 +28,21 @@
     "name": "Model Uniwersalny",
     "tier": "Średni",
     "badge": "Najczęściej wybierany",
-    "image": "/images/model-uniwersalny.jpg",
-    "summary": "Model dla firm, które wyrosły z podstawowego zakresu pracy lub wiedzą od początku, że spawarka będzie pracować na dwie zmiany. Wyższa moc i większa prędkość oznaczają dostęp do grubszych materiałów i krótszy czas cyklu na każdym zleceniu.",
+    "image": "/images/spawarka-2000w-double-double.jpg",
+    "summary": "Model dla firm, które wyrosły z podstawowego zakresu pracy lub od razu potrzebują wyższej przepustowości. Spawarka 2000W z podwójną oscylacją i podwójnym podajnikiem to najlepszy balans możliwości i ceny.",
     "idealFor": [
-      "produkcja mieszana: stal węglowa do 6 mm, nierdzewna do 4 mm, aluminium do 5 mm",
-      "zakłady pracujące 100–160 h miesięcznie na jednej zmianie",
+      "produkcja mieszana: stal węglowa do 12 mm, nierdzewna do 8 mm, aluminium do 6 mm",
+      "zakłady pracujące 100–160 h miesięcznie",
       "firmy rozwijające portfel zleceń i potrzebujące elastyczności materiałowej"
     ],
     "advantages": [
-      "szerszy zakres materiałów w jednej maszynie — nie odmawiasz zlecenia z powodu grubości",
-      "wyższa prędkość spawania skraca czas serii i zwiększa przepustowość",
+      "szerszy zakres materiałów — nie odmawiasz zlecenia z powodu grubości",
+      "podwójna oscylacja głowicy — szersza spoina i lepsza fuzja materiału",
       "wystarczający zapas mocy na kolejne 5–7 lat bez konieczności wymiany maszyny"
     ],
     "specs": {
       "power": "2 kW (fiber)",
-      "type": "Ręczna (handheld)",
+      "type": "Ręczna 4w1 z podwójną oscylacją i podwójnym podajnikiem",
       "speed": "do 300 mm/s (cienkie blachy)",
       "materialThickness": "stal węglowa do 12 mm · nierdzewna do 8 mm · aluminium do 6 mm"
     }
@@ -52,21 +52,21 @@
     "name": "Model Premium",
     "tier": "Zaawansowany",
     "badge": "Do intensywnej produkcji",
-    "image": "/images/model-premium.jpg",
-    "summary": "Maszyna dla zakładów, gdzie spawarka pracuje na dwie lub trzy zmiany i liczy się każda minuta przestoju. Wysoka moc i zautomatyzowana stacja spawalnicza pozwalają obsłużyć wolumen, przy którym model ręczny staje się wąskim gardłem.",
+    "image": "/images/spawarka-3000w-double-double.jpg",
+    "summary": "Maszyna dla zakładów, gdzie spawarka pracuje na dwie zmiany i liczy się każda minuta przestoju. Moc 3 kW umożliwia spawanie stali węglowej do 20 mm i nierdzewnej do 12 mm z zachowaniem wysokiej prędkości.",
     "idealFor": [
-      "intensywna produkcja seryjna — stal węglowa do 20 mm, nierdzewna do 10 mm",
+      "intensywna produkcja seryjna — stal węglowa do 20 mm, nierdzewna do 12 mm",
       "zakłady pracujące powyżej 160 h miesięcznie lub na dwie zmiany",
-      "kooperanci i usługodawcy spawania, dla których throughput to bezpośredni przychód"
+      "kooperanci spawalniczy, dla których throughput to bezpośredni przychód"
     ],
     "advantages": [
-      "najwyższa przepustowość — więcej spoin na zmianę przy tych samych kosztach stałych",
-      "automatyzacja podawania i pozycjonowania detali redukuje udział operatora i ryzyko błędów",
-      "najniższy koszt jednostkowy spoiny przy dużych seriach — maszyna zarabia na różnicy"
+      "najwyższa moc w segmencie ręcznym — spawanie najgrubszych materiałów bez kompromisów",
+      "podwójna oscylacja i podwójny podajnik — ciągła praca bez ręcznej wymiany drutu",
+      "najniższy koszt jednostkowy spoiny przy dużych seriach"
     ],
     "specs": {
       "power": "3 kW (fiber)",
-      "type": "Automatyczna stacja spawalnicza",
+      "type": "Ręczna 4w1 z podwójną oscylacją i podwójnym podajnikiem",
       "speed": "do 500 mm/s (cienkie blachy)",
       "materialThickness": "stal węglowa do 20 mm · nierdzewna do 12 mm · aluminium do 10 mm"
     }

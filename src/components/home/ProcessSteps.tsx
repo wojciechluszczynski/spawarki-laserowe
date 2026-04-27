@@ -41,7 +41,7 @@ export function ProcessSteps() {
             )}
             <div
               className="relative z-10 w-11 h-11 rounded-full flex items-center justify-center text-sm font-black shrink-0"
-              style={{ backgroundColor: '#FFA52F', color: '#0D1117', fontFamily: 'var(--font-rubik)' }}
+              style={{ backgroundColor: '#06B6D4', color: '#0D1117', fontFamily: 'var(--font-rubik)' }}
             >
               {s.n}
             </div>

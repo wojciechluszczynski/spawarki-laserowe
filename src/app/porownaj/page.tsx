@@ -103,7 +103,7 @@ export default function PorownajPage() {
         <div className="max-w-6xl mx-auto px-6">
           <p
             className="text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: '#FFA52F' }}
+            style={{ color: '#06B6D4' }}
           >
             Niezależna analiza
           </p>
@@ -198,7 +198,7 @@ export default function PorownajPage() {
                 <div className="flex flex-col gap-1">
                   <span
                     className="inline-block self-start text-sm font-black px-2.5 py-1 rounded-full"
-                    style={{ backgroundColor: '#FFA52F', color: '#fff' }}
+                    style={{ backgroundColor: '#06B6D4', color: '#fff' }}
                   >
                     {card.power}
                   </span>
@@ -312,7 +312,7 @@ export default function PorownajPage() {
                       <Link
                         href="/modele"
                         className="font-bold hover:opacity-70 transition-opacity inline-flex items-center gap-1"
-                        style={{ color: '#FFA52F' }}
+                        style={{ color: '#06B6D4' }}
                       >
                         {row.recommendation}
                         <span aria-hidden="true">→</span>
@@ -345,7 +345,7 @@ export default function PorownajPage() {
           <Link
             href="/kontakt"
             className="inline-flex items-center gap-2 text-sm font-black px-6 py-3 rounded-[var(--radius-md)] transition-all hover:opacity-90 shrink-0"
-            style={{ backgroundColor: '#FFA52F', color: '#0D1117' }}
+            style={{ backgroundColor: '#06B6D4', color: '#0D1117' }}
           >
             Zapytaj eksperta
           </Link>

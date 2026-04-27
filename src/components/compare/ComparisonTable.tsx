@@ -21,10 +21,10 @@ function CheckIcon() {
       aria-label="Tak"
       style={{ display: 'inline-block', verticalAlign: 'middle' }}
     >
-      <circle cx="9" cy="9" r="9" fill="rgba(255,165,47,0.15)" />
+      <circle cx="9" cy="9" r="9" fill="rgba(6,182,212,0.15)" />
       <path
         d="M5 9.5L7.5 12L13 6.5"
-        stroke="#FFA52F"
+        stroke="#06B6D4"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"

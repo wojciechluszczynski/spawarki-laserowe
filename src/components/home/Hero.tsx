@@ -27,7 +27,7 @@ export function Hero() {
           {/* Badge */}
           <div
             className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest mb-6 px-3.5 py-1.5 rounded-full"
-            style={{ backgroundColor: 'rgba(255,165,47,0.15)', color: 'var(--accent)', border: '1px solid rgba(255,165,47,0.3)' }}
+            style={{ backgroundColor: 'rgba(6,182,212,0.15)', color: 'var(--accent)', border: '1px solid rgba(6,182,212,0.3)' }}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)]" />
             Niezależny przewodnik
@@ -53,7 +53,7 @@ export function Hero() {
             <Link
               href="/porownaj"
               className="inline-flex items-center gap-2 font-bold px-7 py-3.5 rounded-[var(--radius-md)] transition-all duration-150 hover:opacity-90 active:scale-[0.98]"
-              style={{ backgroundColor: 'var(--accent)', color: '#0D1117', boxShadow: '0 4px 20px rgba(255,165,47,0.45)' }}
+              style={{ backgroundColor: 'var(--accent)', color: '#0D1117', boxShadow: '0 4px 20px rgba(6,182,212,0.45)' }}
             >
               Porównaj modele →
             </Link>
