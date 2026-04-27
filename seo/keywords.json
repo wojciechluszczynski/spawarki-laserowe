@@ -1,0 +1,56 @@
+[
+  {
+    "topic": "Jak wybrać spawarkę laserową do firmy",
+    "keyword": "jak wybrać spawarkę laserową",
+    "intent": "informational",
+    "slug": "jak-wybrac-spawarke-laserowa"
+  },
+  {
+    "topic": "Spawarka laserowa do stali nierdzewnej",
+    "keyword": "spawarka laserowa do stali nierdzewnej",
+    "intent": "commercial",
+    "slug": "spawarka-laserowa-do-stali-nierdzewnej"
+  },
+  {
+    "topic": "Ile kosztuje spawarka laserowa",
+    "keyword": "spawarka laserowa cena",
+    "intent": "commercial",
+    "slug": "ile-kosztuje-spawarka-laserowa"
+  },
+  {
+    "topic": "Spawarka laserowa vs TIG MIG",
+    "keyword": "spawarka laserowa czy tig mig",
+    "intent": "comparison",
+    "slug": "spawarka-laserowa-vs-tig-mig"
+  },
+  {
+    "topic": "Eksploatacja spawarki laserowej",
+    "keyword": "eksploatacja spawarki laserowej",
+    "intent": "informational",
+    "slug": "eksploatacja-spawarki-laserowej"
+  },
+  {
+    "topic": "Błędy przy zakupie spawarki laserowej",
+    "keyword": "zakup spawarki laserowej błędy",
+    "intent": "informational",
+    "slug": "bledy-przy-zakupie-spawarki-laserowej"
+  },
+  {
+    "topic": "Jak przygotować halę pod spawarkę laserową",
+    "keyword": "hala pod spawarkę laserową",
+    "intent": "informational",
+    "slug": "jak-przygotowac-hale-pod-spawarke-laserowa"
+  },
+  {
+    "topic": "Serwis spawarki laserowej",
+    "keyword": "serwis spawarki laserowej",
+    "intent": "commercial",
+    "slug": "serwis-spawarki-laserowej"
+  },
+  {
+    "topic": "ROI z inwestycji w spawarkę laserową",
+    "keyword": "zwrot z inwestycji spawarka laserowa",
+    "intent": "commercial",
+    "slug": "roi-z-inwestycji-w-spawarke-laserowa"
+  }
+]

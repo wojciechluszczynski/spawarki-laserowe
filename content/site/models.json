@@ -1,0 +1,74 @@
+[
+  {
+    "id": "model-ekonomiczny",
+    "name": "Model Ekonomiczny",
+    "tier": "Podstawowy",
+    "badge": "Dla mniejszych zakładów",
+    "image": "/images/model-ekonomiczny.jpg",
+    "summary": "Optymalny punkt wejścia dla firm, które regularnie spawają blachy do 3 mm i chcą uniezależnić się od podwykonawców bez nadmiernego zaangażowania kapitałowego. Ręczna spawarka laserowa, która płaci na siebie już przy kilkudziesięciu godzinach produkcji miesięcznie.",
+    "idealFor": [
+      "firmy spawające stal węglową i nierdzewną do 3 mm",
+      "zakłady realizujące do 80 h spawania miesięcznie",
+      "pierwsza maszyna laserowa w parku — wejście w technologię fiber"
+    ],
+    "advantages": [
+      "eliminujesz zależność od podwykonawcy — zlecenie realizujesz własną maszyną następnego dnia",
+      "niski próg wejścia — ROI możliwy już w 2–3 lata przy regularnej produkcji",
+      "prosta obsługa — operator po 1–2 dniach szkolenia samodzielnie prowadzi produkcję"
+    ],
+    "specs": {
+      "power": "1,5 kW (fiber)",
+      "type": "Ręczna (handheld)",
+      "speed": "do 200 mm/s (cienkie blachy)",
+      "materialThickness": "stal węglowa do 8 mm · nierdzewna do 5 mm · aluminium do 4 mm"
+    }
+  },
+  {
+    "id": "model-uniwersalny",
+    "name": "Model Uniwersalny",
+    "tier": "Średni",
+    "badge": "Najczęściej wybierany",
+    "image": "/images/model-uniwersalny.jpg",
+    "summary": "Model dla firm, które wyrosły z podstawowego zakresu pracy lub wiedzą od początku, że spawarka będzie pracować na dwie zmiany. Wyższa moc i większa prędkość oznaczają dostęp do grubszych materiałów i krótszy czas cyklu na każdym zleceniu.",
+    "idealFor": [
+      "produkcja mieszana: stal węglowa do 6 mm, nierdzewna do 4 mm, aluminium do 5 mm",
+      "zakłady pracujące 100–160 h miesięcznie na jednej zmianie",
+      "firmy rozwijające portfel zleceń i potrzebujące elastyczności materiałowej"
+    ],
+    "advantages": [
+      "szerszy zakres materiałów w jednej maszynie — nie odmawiasz zlecenia z powodu grubości",
+      "wyższa prędkość spawania skraca czas serii i zwiększa przepustowość",
+      "wystarczający zapas mocy na kolejne 5–7 lat bez konieczności wymiany maszyny"
+    ],
+    "specs": {
+      "power": "2 kW (fiber)",
+      "type": "Ręczna (handheld)",
+      "speed": "do 300 mm/s (cienkie blachy)",
+      "materialThickness": "stal węglowa do 12 mm · nierdzewna do 8 mm · aluminium do 6 mm"
+    }
+  },
+  {
+    "id": "model-premium",
+    "name": "Model Premium",
+    "tier": "Zaawansowany",
+    "badge": "Do intensywnej produkcji",
+    "image": "/images/model-premium.jpg",
+    "summary": "Maszyna dla zakładów, gdzie spawarka pracuje na dwie lub trzy zmiany i liczy się każda minuta przestoju. Wysoka moc i zautomatyzowana stacja spawalnicza pozwalają obsłużyć wolumen, przy którym model ręczny staje się wąskim gardłem.",
+    "idealFor": [
+      "intensywna produkcja seryjna — stal węglowa do 20 mm, nierdzewna do 10 mm",
+      "zakłady pracujące powyżej 160 h miesięcznie lub na dwie zmiany",
+      "kooperanci i usługodawcy spawania, dla których throughput to bezpośredni przychód"
+    ],
+    "advantages": [
+      "najwyższa przepustowość — więcej spoin na zmianę przy tych samych kosztach stałych",
+      "automatyzacja podawania i pozycjonowania detali redukuje udział operatora i ryzyko błędów",
+      "najniższy koszt jednostkowy spoiny przy dużych seriach — maszyna zarabia na różnicy"
+    ],
+    "specs": {
+      "power": "3 kW (fiber)",
+      "type": "Automatyczna stacja spawalnicza",
+      "speed": "do 500 mm/s (cienkie blachy)",
+      "materialThickness": "stal węglowa do 20 mm · nierdzewna do 12 mm · aluminium do 10 mm"
+    }
+  }
+]

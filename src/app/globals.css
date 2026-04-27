@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  /* ── Primary — żółty/pomarańczowy ───────────── */
+  --accent:        #FFA52F;
+  --accent-hover:  #F09520;
+  --accent-subtle: #FFF5E6;
+
+  /* ── Dark ────────────────────────────────────── */
+  --dark:          #0D1117;
+  --dark-2:        #1B2332;
+
+  /* ── Backgrounds ─────────────────────────────── */
+  --bg:            #F7F8FC;
+  --bg-card:       #FFFFFF;
+
+  /* ── Text ────────────────────────────────────── */
+  --fg:            #0D1117;
+  --fg-secondary:  #374151;
+  --muted:         #6B7280;
+  --muted-light:   #9CA3AF;
+
+  /* ── Borders ─────────────────────────────────── */
+  --border:        #E5E8F0;
+  --border-strong: #CBD1DF;
+
+  /* ── Radius ──────────────────────────────────── */
+  --radius-sm:  0.5rem;    /*  8px */
+  --radius-md:  1rem;      /* 16px */
+  --radius-lg:  1.5rem;    /* 24px */
+  --radius-xl:  2rem;      /* 32px */
+
+  /* ── Shadows ─────────────────────────────────── */
+  --shadow-sm:  0 1px 3px 0 rgb(0 0 0 / 0.07), 0 1px 2px -1px rgb(0 0 0 / 0.05);
+  --shadow-md:  0 4px 16px 0 rgb(0 0 0 / 0.09), 0 2px 6px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg:  0 8px 32px 0 rgb(0 0 0 / 0.11), 0 4px 10px -4px rgb(0 0 0 / 0.06);
+
+  /* ── Transitions ─────────────────────────────── */
+  --transition:      150ms ease;
+  --transition-slow: 250ms ease;
+}
+
+/* ── Base ───────────────────────────────────────── */
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-rubik), var(--font-inter), system-ui, sans-serif;
+}
+
+/* ── Focus visible ──────────────────────────────── */
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* ── Smooth scroll ──────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Selection ──────────────────────────────────── */
+::selection {
+  background-color: var(--accent-subtle);
+  color: var(--fg);
+}

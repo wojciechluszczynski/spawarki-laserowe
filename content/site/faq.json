@@ -1,0 +1,78 @@
+[
+  {
+    "question": "Jak dobrać spawarkę laserową do firmy?",
+    "answer": "Dobór zależy od rodzaju i grubości spawanych materiałów, skali produkcji oraz dostępnego budżetu. Kluczowe parametry to moc lasera, typ głowicy (ręczna czy automatyczna) i obsługiwane materiały - dopiero po zestawieniu tych zmiennych z realnym planem produkcji można wybrać właściwy model. Serwis pozwala porównać wszystkie trzy klasy maszyn w jednym miejscu."
+  },
+  {
+    "question": "Ile kosztuje spawarka laserowa - jakiego budżetu potrzebuję?",
+    "answer": "Ceny ręcznych spawarek laserowych fiber dla firm produkcyjnych zaczynają się od ok. 30–60 tys. zł netto za modele podstawowe (1 kW), przez 80–150 tys. zł za modele średnie (2 kW), aż po 200+ tys. zł za automatyczne stacje spawalnicze z wysoką mocą. Do ceny zakupu należy doliczyć koszty instalacji, przyłącza energetycznego, gazów osłonowych i pierwszego szkolenia obsługi."
+  },
+  {
+    "question": "Czy spawarka laserowa sprawdzi się w małej firmie?",
+    "answer": "Tak - model podstawowy lub ręczna spawarka laserowa jest realną opcją dla zakładów zatrudniających kilka–kilkanaście osób, jeśli firma regularnie spawa blachy i realizuje seryjne zlecenia. Kluczowe pytanie to rentowność: przy produkcji poniżej 40–60 godzin spawania miesięcznie ROI może być trudny do uzasadnienia. Poniżej tej granicy warto rozważyć podwykonawstwo zamiast własnej maszyny."
+  },
+  {
+    "question": "Jakie materiały można spawać spawarką laserową?",
+    "answer": "Spawarki laserowe fiber spawają przede wszystkim metale: stal węglową, stal nierdzewną, aluminium, miedź, mosiądz i tytan. Stal węglowa i nierdzewna to najczęstsze zastosowania. Szczególną przewagą lasera nad TIG/MIG jest spawanie stali nierdzewnej - minimalna strefa wpływu ciepła eliminuje przebarwienia i odkształcenia, a spoina jest gotowa bez szlifowania."
+  },
+  {
+    "question": "Na co zwrócić uwagę przy zakupie spawarki laserowej?",
+    "answer": "Priorytetowe parametry to: moc (determinuje maksymalną grubość i prędkość spawania), typ głowicy (ręczna czy automatyczna), jakość źródła lasera i systemu chłodzenia. Równie ważne są: dostępność serwisu w Polsce, czas reakcji producenta, zakres gwarancji i dostępność części zamiennych - maszyna stojąca to strata przychodów, nie tylko koszty naprawy."
+  },
+  {
+    "question": "Czy oferujecie pomoc w wyborze modelu?",
+    "answer": "Tak. Serwis spawarkilaserowe.com to niezależne doradztwo, które pomaga porównać trzy klasy maszyn i wybrać model dopasowany do specyfiki produkcji - bez presji sprzedażowej. Możesz skontaktować się z nami przez formularz, by omówić konkretny przypadek."
+  },
+  {
+    "question": "Spawarka laserowa do stali nierdzewnej - co muszę wiedzieć?",
+    "answer": "Laser fiber to najlepsza technologia do spawania stali nierdzewnej - minimalna strefa wpływu ciepła eliminuje przebarwienia, a spoina jest estetyczna i gotowa bez szlifowania. Gaz osłonowy to argon lub mieszanka argon/hel. Do stali nierdzewnej powyżej 3 mm niezbędna jest moc minimum 2 kW; poniżej tej grubości wystarczy model 1–1,5 kW."
+  },
+  {
+    "question": "Ile kW mocy potrzebuje moja firma - jak wybrać moc spawarki laserowej?",
+    "answer": "Zasada praktyczna: 1–1,5 kW wystarczają do spawania stali i nierdzewnej do ok. 3 mm. Przy 2 kW możesz spawać materiały do 5–6 mm w rozsądnym czasie produkcyjnym. Powyżej 3 kW wchodzi się w materiały grubsze lub wymaga się bardzo wysokich prędkości posuwu. Większa moc to też wyższe koszty energii i zakupu - nie zawsze opłaca się kupować moc z zapasem."
+  },
+  {
+    "question": "Spawarka laserowa czy TIG/MIG - kiedy laser ma sens?",
+    "answer": "Laser fiber wygrywa prędkością (2–5× szybciej niż TIG), jakością spoiny na stali nierdzewnej i aluminium oraz minimalną deformacją materiału. TIG jest tańszy w zakupie i sprawdza się przy grubszych materiałach i mniej restrykcyjnych wymaganiach estetycznych. Jeśli Twoi klienci wymagają estetycznych spoin na nierdzewce, minimalizacji odkształceń lub wysokiej powtarzalności serii - laser jest właściwym wyborem."
+  },
+  {
+    "question": "Jak przygotować zakład pod spawarkę laserową?",
+    "answer": "Minimum to: przyłącze elektryczne o odpowiedniej mocy (od 5 kVA dla małych maszyn do 20+ kVA dla dużych), instalacja gazu osłonowego (argon lub azot), system odciągu i filtracji dymów spawalniczych oraz twardy, poziomy podkład podłogi. Warto wcześniej skonsultować projekt stanowiska z dostawcą maszyny - błędy w infrastrukturze odkryte po dostarczeniu maszyny kosztują znacznie więcej niż konsultacja przed zakupem."
+  },
+  {
+    "question": "Jakie są miesięczne koszty eksploatacji spawarki laserowej?",
+    "answer": "Główne składniki to: energia elektryczna (maszyna 2 kW pobiera ok. 5–10 kWh w pracy - przy 160 h/msc to ok. 800–1 500 zł), gazy osłonowe (argon, 500–1 500 zł/msc zależnie od intensywności), zużywalne głowicy (dysze, okienka ochronne - ok. 200–600 zł/msc), serwis prewencyjny (ok. 300–600 zł/msc) i praca operatora. Łącznie dla maszyny średniej klasy należy planować 3 000–6 000 zł/msc kosztów stałych."
+  },
+  {
+    "question": "Co obejmuje gwarancja i serwis spawarki laserowej?",
+    "answer": "Standardowa gwarancja producenta to zazwyczaj 12–24 miesiące na podzespoły mechaniczne i elektronikę, z osobnymi warunkami dla źródła lasera (często 24 miesiące lub limit godzin pracy). Kluczowe pytania przy zakupie: czas reakcji serwisanta (8h czy 48h?), dostępność części zamiennych w Polsce, koszt i zakres pogwarancyjnego kontraktu serwisowego. Serwis realizowany przez polskiego dystrybutora jest znacznie szybszy niż sprowadzanie technika z Azji."
+  },
+  {
+    "question": "Jaki gaz do spawarki laserowej - argon czy azot?",
+    "answer": "Argon lub mieszanki argon/hel to standard dla stali nierdzewnej i aluminium - zapewniają czystą, estetyczną spoinę bez utleniania. Azot stosuje się jako tańszą alternatywę przy stali węglowej. Do spawania stali nierdzewnej argon jest preferowany - spoina wychodzi czysta, bez przebarwień, gotowa do ekspozycji bez dalszej obróbki. Koszt gazów jest znacznie niższy niż przy cięciu laserowym."
+  },
+  {
+    "question": "Ręczna czy automatyczna spawarka laserowa - którą wybrać?",
+    "answer": "Ręczna (handheld) spawarka laserowa to idealne wejście w technologię: tańsza, elastyczna, operator może pracować w różnych miejscach hali i na dużych detalach. Automatyczna stacja spawalnicza (z uchwytem roboczym lub robotem) zapewnia najwyższą powtarzalność i przepustowość przy produkcji seryjnej. Wybór zależy od charakteru produkcji: jednostkowa/krótkie serie → ręczna; długie serie standaryzowanych detali → automatyczna."
+  },
+  {
+    "question": "Jak liczyć ROI z spawarki laserowej?",
+    "answer": "Prosty schemat: weź miesięczny przychód z usług spawania lub oszczędności na podwykonawstwie, odejmij koszty eksploatacji (energia, gazy, serwis, operator) - to Twój miesięczny zysk netto z maszyny. Podziel cenę zakupu przez tę kwotę, by uzyskać okres zwrotu w miesiącach. Przy założeniu 100–160 godzin pracy miesięcznie ręczna spawarka klasy średniej powinna zwracać się w 2–4 lata. Uwzględnij też ulgi podatkowe (jednorazowa amortyzacja do 100 tys. EUR) i leasing."
+  },
+  {
+    "question": "Czy spawarka laserowa zastąpi pracownika?",
+    "answer": "Laser zastępuje pracę ręczną przy spawaniu TIG i MIG, ale wymaga wykwalifikowanego operatora do ustawiania parametrów i kontroli jakości. Jeden operator może obsługiwać 1–2 maszyny jednocześnie, co oznacza, że wydajność wzrasta bez proporcjonalnego wzrostu zatrudnienia. Nie jest to narzędzie do eliminacji ludzi - to narzędzie do robienia tego samego wolumenu mniejszą liczbą rąk i z wyższą powtarzalnością."
+  },
+  {
+    "question": "Spawarka laserowa dla małej firmy - od czego zacząć?",
+    "answer": "Zacznij od analizy obecnych zleceń: ile godzin miesięcznie kupujesz spawanie na zewnątrz lub ile czasu tracisz na ręczną obróbkę i szlifowanie spoin? Jeśli to więcej niż 50 godzin, ręczna spawarka laserowa 1,5 kW jest realną inwestycją. Rozmawiaj z co najmniej dwoma dostawcami, poproś o demonstrację na Twoich własnych materiałach i sprawdź warunki serwisu w Polsce - nie tylko cenę maszyny."
+  },
+  {
+    "question": "Jak długo trwa wdrożenie spawarki laserowej?",
+    "answer": "Od zamówienia do pierwszej produkcji: dostawa maszyny z Azji lub Europy trwa 4–12 tygodni, uruchomienie kolejny 1–2 dni, szkolenie operatora 1–3 dni. Przygotowanie stanowiska (elektryka, gaz osłonowy, odciąg) powinno być gotowe przed dostawą - jeśli zaczynasz od zera, doliczy 2–4 tygodnie. Realnie: od decyzji do pełnej produkcji należy planować 2–4 miesiące."
+  },
+  {
+    "question": "Czy potrzebuję pozwolenia lub zgłoszenia na spawarkę laserową?",
+    "answer": "Sama maszyna nie wymaga osobnego pozwolenia na użytkowanie, ale jej instalacja wiąże się z kilkoma obowiązkami: przegląd i odbiór instalacji elektrycznej przez uprawnionego elektryka, zgłoszenie zmiany w BHP i planie ewakuacji zakładu, a przy instalacji odciągu dymów spawalniczych może być wymagane zgłoszenie do inspekcji ochrony środowiska. Warto to skonsultować z dostawcą maszyny i BHP-owcem przed podpisaniem umowy."
+  }
+]

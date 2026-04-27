@@ -1,0 +1,20 @@
+create table if not exists posts (
+  id uuid primary key default gen_random_uuid(),
+  title text not null,
+  h1 text,
+  slug text unique not null,
+  excerpt text,
+  content text not null,
+  cover_image text,
+  meta_title text,
+  meta_description text,
+  meta_image text,
+  social_title text,
+  social_description text,
+  category text,
+  tags text[],
+  published_at timestamptz,
+  status text not null default 'draft',
+  created_at timestamptz default now(),
+  updated_at timestamptz default now()
+);

@@ -1,0 +1,75 @@
+[
+  {
+    "family": "SL1000H",
+    "name": "Ręczna SL1000H",
+    "image": "/images/sl1000h.jpg",
+    "workArea": "Ręczna — bez ograniczenia pola roboczego",
+    "description": "Kompaktowa ręczna spawarka laserowa 1000W z wbudowanym chłodzeniem wodnym. Źródło Raycus, głowica z wymiennym kątem, sterownik dotykowy. Idealna dla małych zakładów i warsztatów wchodzących w technologię laser fiber.",
+    "materialThickness": { "stal": "8 mm", "nierdzewna": "5 mm", "aluminium": "3 mm" },
+    "variants": [
+      { "power": "1000W", "priceNet": 28000, "priceGross": 34440, "bestseller": false, "shopUrl": "#" }
+    ],
+    "highlights": ["Źródło Raycus — niska awaryjność, tanie części", "Wbudowana chłodnica wodna w zestawie", "Głowica wielofunkcyjna: spawanie, czyszczenie, lutowanie"]
+  },
+  {
+    "family": "SL1500H",
+    "name": "Ręczna SL1500H",
+    "image": "/images/sl1500h.jpg",
+    "workArea": "Ręczna — bez ograniczenia pola roboczego",
+    "description": "Popularna ręczna spawarka laserowa 1500W. Źródło Raycus, głowica autofokus z wymiennym kątem roboczym, sterownik cyfrowy. Polecana jako pierwsza maszyna laserowa w zakładzie — dobry balans mocy i ceny.",
+    "materialThickness": { "stal": "10 mm", "nierdzewna": "6 mm", "aluminium": "4 mm" },
+    "variants": [
+      { "power": "1500W", "priceNet": 38000, "priceGross": 46740, "bestseller": true, "shopUrl": "#" }
+    ],
+    "highlights": ["Najpopularniejszy model — sprawdzony w setkach zakładów", "Głowica autofokus — praca na nierównych detalach bez regulacji", "Kompletny zestaw: przewody 10 m, drut spawalniczy, chłodnica"]
+  },
+  {
+    "family": "SL2000H",
+    "name": "Ręczna SL2000H",
+    "image": "/images/sl2000h.jpg",
+    "workArea": "Ręczna — bez ograniczenia pola roboczego",
+    "description": "Zaawansowana ręczna spawarka laserowa 2000W do intensywnej produkcji. Źródło JPT lub Raycus, głowica z automatycznym systemem chłodzenia, prędkość spawania do 300 mm/s. Przeznaczona dla firm z wysokimi wymaganiami grubości i przepustowości.",
+    "materialThickness": { "stal": "12 mm", "nierdzewna": "8 mm", "aluminium": "6 mm" },
+    "variants": [
+      { "power": "2000W", "priceNet": 65000, "priceGross": 79950, "bestseller": false, "shopUrl": "#" },
+      { "power": "2000W JPT", "priceNet": 75000, "priceGross": 92250, "bestseller": false, "shopUrl": "#" }
+    ],
+    "highlights": ["Moc 2 kW — spawanie do 12 mm stali węglowej", "Źródło JPT lub Raycus do wyboru", "Prędkość do 300 mm/s — wysoka przepustowość przy produkcji seryjnej"]
+  },
+  {
+    "family": "SL3000H",
+    "name": "Ręczna SL3000H",
+    "image": "/images/sl3000h.jpg",
+    "workArea": "Ręczna — bez ograniczenia pola roboczego",
+    "description": "Flagowa ręczna spawarka laserowa 3000W dla najbardziej wymagających zastosowań. Przeznaczona do spawania grubych elementów stalowych i aluminiowych w zakładach pracujących na dwie zmiany.",
+    "materialThickness": { "stal": "20 mm", "nierdzewna": "12 mm", "aluminium": "10 mm" },
+    "variants": [
+      { "power": "3000W", "priceNet": 120000, "priceGross": 147600, "bestseller": false, "shopUrl": "#" }
+    ],
+    "highlights": ["Moc 3 kW — najwyższa dostępna moc w segmencie ręcznym", "Grubość do 20 mm stali węglowej", "Przemysłowe chłodzenie wodne, przewody 15 m w zestawie"]
+  },
+  {
+    "family": "SL2000A",
+    "name": "Automatyczna SL2000A",
+    "image": "/images/sl2000a.jpg",
+    "workArea": "Stół roboczy 800 × 600 mm",
+    "description": "Automatyczna stacja spawalnicza z laserem 2000W. Stolik obrotowy z uchwytem trójszczękowym, programowalny sterownik CNC, powtarzalność 0,02 mm. Idealna do produkcji seryjnej standaryzowanych detali.",
+    "materialThickness": { "stal": "12 mm", "nierdzewna": "8 mm", "aluminium": "6 mm" },
+    "variants": [
+      { "power": "2000W", "priceNet": 180000, "priceGross": 221400, "bestseller": false, "shopUrl": "#" }
+    ],
+    "highlights": ["Stolik obrotowy z uchwytem trójszczękowym w zestawie", "Powtarzalność 0,02 mm — produkcja seryjna bez kontroli każdej sztuki", "Sterownik CNC z zapisem programów — szybkie przezbrojenie"]
+  },
+  {
+    "family": "SL3000A",
+    "name": "Automatyczna SL3000A",
+    "image": "/images/sl3000a.jpg",
+    "workArea": "Stół roboczy 1200 × 800 mm",
+    "description": "Przemysłowa automatyczna stacja spawalnicza z laserem 3000W i dużym polem roboczym. Podwójny stolik wymienny — ciągła produkcja bez przestoju. Przeznaczona dla zakładów pracujących na dwie i trzy zmiany.",
+    "materialThickness": { "stal": "20 mm", "nierdzewna": "12 mm", "aluminium": "10 mm" },
+    "variants": [
+      { "power": "3000W", "priceNet": 280000, "priceGross": 344400, "bestseller": false, "shopUrl": "#" }
+    ],
+    "highlights": ["Podwójny stolik wymienny — ciągła produkcja bez przestoju", "Pole robocze 1200 × 800 mm — duże detale bez przezbrajania", "Najniższy koszt jednostkowy spoiny przy dużych seriach"]
+  }
+]

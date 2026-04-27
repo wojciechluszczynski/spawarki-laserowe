@@ -1,0 +1,8 @@
+{
+  "main": [
+    { "label": "Poradniki", "href": "/poradniki" },
+    { "label": "Porównaj", "href": "/porownaj" },
+    { "label": "Modele", "href": "/modele" },
+    { "label": "Kontakt", "href": "/kontakt" }
+  ]
+}

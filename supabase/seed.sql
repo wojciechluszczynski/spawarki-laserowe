@@ -1,0 +1,1 @@
+-- TODO: Seed przykładowych wpisów i ustawień globalnych.

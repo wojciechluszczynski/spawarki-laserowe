@@ -1,0 +1,1 @@
+-- TODO: Dodać polityki RLS po decyzji o modelu autoryzacji.

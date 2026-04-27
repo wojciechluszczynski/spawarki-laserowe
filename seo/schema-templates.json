@@ -1,0 +1,20 @@
+{
+  "organization": {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Spawarki Laserowe",
+    "url": "https://spawarkilaserowe.com"
+  },
+  "faqPage": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage"
+  },
+  "article": {
+    "@context": "https://schema.org",
+    "@type": "Article"
+  },
+  "product": {
+    "@context": "https://schema.org",
+    "@type": "Product"
+  }
+}

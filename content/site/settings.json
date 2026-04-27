@@ -1,0 +1,12 @@
+{
+  "siteName": "Spawarki Laserowe",
+  "domain": "spawarkilaserowe.com",
+  "locale": "pl-PL",
+  "brandType": "industrial-b2b",
+  "primaryKeyword": "spawarki laserowe",
+  "defaultSocialImage": "/og/og-default.jpg",
+  "contact": {
+    "email": "kontakt@spawarkilaserowe.com",
+    "phone": "+48 000 000 000"
+  }
+}

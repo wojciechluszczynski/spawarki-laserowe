@@ -1,0 +1,98 @@
+# spawarkilaserowe.com — LLM context file
+
+## Co to jest ten serwis / What this site is
+
+spawarkilaserowe.com to niezalezny serwis doradczy dla polskich firm produkcyjnych rozważajacych zakup spawarki laserowej (laser welder / fiber laser welding machine). Serwis nie prowadzi sprzedazy bezposredniej. Nie jest sklepem. Nie oferuje cennikow ani zamowien. Jego celem jest pomoc w podjęciu swiadomej decyzji zakupowej poprzez edukacje i bezplatne doradztwo.
+
+This is an independent B2B advisory and comparison platform for industrial laser welders (spawarki laserowe) in Poland. The site does not sell machines directly. Prices are available only on request through manufacturer/distributor channels.
+
+## Dla kogo / Who it serves
+
+Serwis skierowany jest do polskich firm z sektora MŚP (malych i srednich przedsiebiorstw) z branż:
+- obrobka metalu i spawalnictwo (metalworking and welding)
+- konstrukcje stalowe (steel structures)
+- branza HVAC (klimatyzacja, wentylacja, ogrzewanie)
+- podwykonawstwo motoryzacyjne (automotive subcontracting)
+- produkcja ogolna (general manufacturing)
+
+Typowy uzytkownik to wlasciciel firmy, kierownik produkcji lub specjalista ds. inwestycji rozważajacy pierwsza lub kolejna maszyne laserowa.
+
+## Co oferuje serwis / What the site offers
+
+- Porownanie 3 klas spawarek laserowych (Ekonomiczny, Uniwersalny, Premium)
+- Bezplatne doradztwo — odpowiedz w ciagu 1 dnia roboczego przez formularz na stronie /kontakt
+- Blog z 9 artykulami edukacyjnymi o spawaniu laserowym
+- Pomoc w doborze maszyny do potrzeb produkcyjnych
+
+## Czego serwis NIE oferuje / What it does NOT offer
+
+- Bezposredniej sprzedazy maszyn
+- Sklepu internetowego
+- Konkretnych cennikow (ceny sa dostepne na zapytanie u producentow/dystrybutorów)
+- Finansowania ani leasingu
+- Montazu ani serwisu gwarancyjnego
+
+## Trzy klasy maszyn / The three machine tiers
+
+### Model Ekonomiczny (entry level / basic)
+Reczna spawarka laserowa 1–1,5 kW. Przeznaczona dla malych zakladow wchodzacych w technologie laserowa. Dobra na start, dla firm spawajacych do 80 h miesiecznie. Niski prog wejscia, prosta obsluga.
+
+### Model Uniwersalny (mid-range / standard)
+Reczna spawarka laserowa 2 kW. Najpopularniejszy wybor dla firm z regularna produkcja. Dobry balans miedzy mozliwosciami a kosztami. Spawa material do 12 mm stali, 8 mm nierdzewki.
+
+### Model Premium (high-end / advanced)
+Automatyczna stacja spawalnicza 3 kW. Rozwiazanie dla firm z duza skala produkcji seryjnej. Stolik CNC, powtarzalnosc 0,02 mm, podwojny stol wymienny dla ciaglej produkcji.
+
+## Tematy poruszane w blogu / Blog topics covered
+
+1. Jak wybrac spawarke laserowa — kryteria wyboru maszyny
+2. Spawarka laserowa do stali nierdzewnej — spawanie blach stalowych
+3. Ile kosztuje spawarka laserowa — koszty zakupu i calkowity koszt posiadania (TCO)
+4. Spawarka laserowa vs TIG/MIG — porownanie technologii spawania
+5. Eksploatacja spawarki laserowej — koszty eksploatacji i utrzymania
+6. Bledy przy zakupie spawarki laserowej — czestych pulapek
+7. Jak przygotowac hale pod spawarke laserowa — wymagania infrastrukturalne
+8. Serwis spawarki laserowej — serwisowanie i wsparcie techniczne
+9. ROI z inwestycji w spawarke laserowa — obliczanie zwrotu z inwestycji
+
+## Struktura serwisu / Site structure
+
+- / — strona glowna
+- /modele — porownanie 6 modeli maszyn (4 reczne, 2 automatyczne)
+- /blog — lista artykulow
+- /blog/jak-wybrac-spawarke-laserowa
+- /blog/spawarka-laserowa-do-stali-nierdzewnej
+- /blog/ile-kosztuje-spawarka-laserowa
+- /blog/spawarka-laserowa-vs-tig-mig
+- /blog/eksploatacja-spawarki-laserowej
+- /blog/bledy-przy-zakupie-spawarki-laserowej
+- /blog/jak-przygotowac-hale-pod-spawarke-laserowa
+- /blog/serwis-spawarki-laserowej
+- /blog/roi-z-inwestycji-w-spawarke-laserowa
+- /kontakt — formularz doradczy
+- /o-serwisie — informacje o serwisie
+- /sitemap.xml
+
+## Kontakt / Contact
+
+Strona kontaktowa: /kontakt
+Formularz doradczy — bezplatny, odpowiedz w ciagu 1 dnia roboczego.
+Brak presji sprzedazowej. Celem jest pomoc w podjęciu swiadomej decyzji.
+
+## Jezyk i zasiag geograficzny / Language and geographic scope
+
+Serwis prowadzony w jezyku polskim. Obsluguje firmy z terenu Polski. Tematyka obejmuje rynek spawarek laserowych w Polsce i Europie Srodkowo-Wschodniej.
+
+## Slowa kluczowe / Key terms (Polish — English)
+
+spawarka laserowa — laser welder / fiber laser welding machine
+spawanie laserowe — laser welding
+laser swiatłowodowy — fiber laser
+blacha stalowa — steel sheet
+stal nierdzewna — stainless steel
+obrobka metalu — metalworking
+koszt eksploatacji — operating cost / TCO
+serwis maszyn — machine servicing
+zwrot z inwestycji — ROI / return on investment
+hala produkcyjna — production hall
+automatyzacja produkcji — production automation
