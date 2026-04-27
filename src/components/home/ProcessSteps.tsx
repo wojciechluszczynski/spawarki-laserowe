@@ -1,23 +1,23 @@
 const steps = [
   {
     n: '01',
-    label: 'Opisz swoją produkcję',
-    desc: 'Co spawasz, z jakiego materiału, jakie grubości i ile sztuk miesięcznie. Im więcej szczegółów — tym trafniejszy dobór.',
+    label: 'Wypełnij formularz w 2 minuty',
+    desc: 'Materiał, grubość, skala produkcji. Tyle wystarczy — resztę wyjaśniamy przez telefon lub e-mail.',
   },
   {
     n: '02',
-    label: 'Otrzymasz konkretną propozycję',
-    desc: 'Odpiszemy z rekomendacją konkretnego modelu i uzasadnieniem - w ciągu jednego dnia roboczego.',
+    label: 'Otrzymujesz konkretną rekomendację',
+    desc: 'Nie ofertę "do wyboru" — konkretny model z uzasadnieniem: dlaczego ten, a nie droższy. W ciągu jednego dnia roboczego.',
   },
   {
     n: '03',
     label: 'Demo na Twoim materiale',
-    desc: 'Organizujemy demonstrację na materiale, który faktycznie spawasz. Możliwość przetestowania przed podjęciem decyzji.',
+    desc: 'Przed decyzją organizujemy spawanie próbne — na materiale, który faktycznie produkujesz, z oczekiwaną grubością i spoiną.',
   },
   {
     n: '04',
-    label: 'Dostawa i uruchomienie',
-    desc: 'Dostawa, montaż, szkolenie operatora. Gwarancja producenta, serwis i części dostępne w Polsce.',
+    label: 'Dostawa, instalacja, szkolenie',
+    desc: 'Wliczone w cenę zakupu. Operator pracuje samodzielnie po 1–3 dniach. Serwis i części dostępne w Polsce.',
   },
 ]
 
@@ -25,8 +25,11 @@ export function ProcessSteps() {
   return (
     <section className="py-20 max-w-6xl mx-auto px-6">
       <div className="mb-12">
+        <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--accent)' }}>
+          Jak to działa
+        </p>
         <h2 className="text-2xl md:text-3xl font-black" style={{ letterSpacing: '-0.02em' }}>
-          Jak wygląda zakup
+          Od zapytania do pierwszej spoiny
         </h2>
       </div>
 
@@ -40,7 +43,7 @@ export function ProcessSteps() {
               />
             )}
             <div
-              className="relative z-10 w-11 h-11 rounded-full flex items-center justify-center text-sm font-black shrink-0"
+              className="relative z-10 w-11 h-11 rounded-xl flex items-center justify-center text-sm font-black shrink-0"
               style={{ backgroundColor: '#06B6D4', color: '#0D1117', fontFamily: 'var(--font-rubik)' }}
             >
               {s.n}

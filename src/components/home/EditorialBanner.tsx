@@ -1,45 +1,29 @@
 const signals = [
-  'Niezależna analiza',
-  'Dane z rynku 2025',
-  'Bez ukrytych prowizji',
+  { icon: '✓', text: 'Autoryzowany dealer BLink Laser' },
+  { icon: '✓', text: 'Gwarancja i serwis w Polsce' },
+  { icon: '✓', text: 'Szkolenie operatora w cenie' },
+  { icon: '✓', text: 'Odpowiedź w 24h robocze' },
 ]
 
 export function EditorialBanner() {
   return (
     <div
-      className="w-full py-3"
+      className="w-full py-3.5"
       style={{
-        backgroundColor: 'var(--bg)',
-        borderTop: '1px solid var(--border)',
-        borderBottom: '1px solid var(--border)',
+        backgroundColor: '#0D1117',
+        borderBottom: '1px solid rgba(255,255,255,0.07)',
       }}
     >
       <div className="max-w-6xl mx-auto px-6">
-        <ul className="flex flex-col sm:flex-row sm:justify-center gap-3 sm:gap-10">
-          {signals.map((signal) => (
+        <ul className="flex flex-wrap justify-center gap-x-8 gap-y-2">
+          {signals.map((s) => (
             <li
-              key={signal}
-              className="flex items-center gap-2"
-              style={{ color: 'var(--muted)', fontSize: '0.8125rem' }}
+              key={s.text}
+              className="flex items-center gap-2 text-[12px] font-medium"
+              style={{ color: 'rgba(255,255,255,0.45)' }}
             >
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                aria-hidden="true"
-                style={{ flexShrink: 0 }}
-              >
-                <circle cx="7" cy="7" r="7" fill="var(--accent)" opacity="0.15" />
-                <path
-                  d="M4 7l2 2 4-4"
-                  stroke="var(--accent)"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              {signal}
+              <span style={{ color: '#06B6D4' }}>{s.icon}</span>
+              {s.text}
             </li>
           ))}
         </ul>

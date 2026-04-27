@@ -1,276 +1,154 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'O serwisie - Spawarki Laserowe',
+  title: 'O serwisie — spawarkilaserowe.com',
   description:
-    'Informacje o serwisie spawarkilaserowe.com - niezaleznym portalu porownan i poradnikow zakupowych dla firm produkcyjnych wybierajacych spawarke laserowa.',
+    'Autoryzowany dealer BLink Laser w Polsce. Katalog spawarek laserowych 1500–3000W, porównania, poradniki zakupowe i bezpłatne doradztwo techniczne dla firm produkcyjnych.',
   openGraph: {
     title: 'O serwisie spawarkilaserowe.com',
     description:
-      'Niezalezny serwis porownawczy spawarek laserowych BLink Laser. Katalog modeli, poradniki i bezplatne doradztwo techniczne.',
+      'Autoryzowany dealer BLink Laser. Katalog modeli, poradniki i bezpłatne doradztwo — dobieramy maszynę do Twojej produkcji.',
   },
-}
-
-const sectionStyle: React.CSSProperties = {
-  marginBottom: '3rem',
-}
-
-const headingStyle: React.CSSProperties = {
-  fontSize: '1.25rem',
-  fontWeight: 700,
-  color: 'var(--fg)',
-  marginBottom: '0.75rem',
-}
-
-const textStyle: React.CSSProperties = {
-  color: 'var(--fg-secondary)',
-  lineHeight: '1.8',
-  marginBottom: '1rem',
-}
-
-const mutedStyle: React.CSSProperties = {
-  color: 'var(--muted)',
-  lineHeight: '1.8',
-  marginBottom: '1rem',
-}
-
-const cardStyle: React.CSSProperties = {
-  backgroundColor: 'var(--bg-card)',
-  border: '1px solid var(--border)',
-  borderRadius: 'var(--radius-md)',
-  padding: '1.5rem',
-  marginBottom: '1rem',
-}
-
-const accentLineStyle: React.CSSProperties = {
-  borderLeft: '3px solid var(--accent)',
-  paddingLeft: '1rem',
-  marginBottom: '1.5rem',
-}
-
-const faqQuestionStyle: React.CSSProperties = {
-  fontWeight: 600,
-  color: 'var(--fg)',
-  marginBottom: '0.4rem',
 }
 
 export default function OSerwisiePage() {
   return (
-    <div className="max-w-3xl mx-auto px-6 py-16">
-      <h1
-        style={{
-          fontSize: '2rem',
-          fontWeight: 800,
-          color: 'var(--fg)',
-          marginBottom: '0.5rem',
-          lineHeight: '1.25',
-        }}
-      >
-        O serwisie spawarkilaserowe.com
-      </h1>
-      <p style={{ ...mutedStyle, marginBottom: '3rem' }}>
-        Katalog, porownania i poradniki zakupowe dla firm wybierajacych spawarke laserowa fiber.
-      </p>
-
-      {/* Czym jest ten serwis */}
-      <section style={sectionStyle}>
-        <h2 style={headingStyle}>Czym jest ten serwis</h2>
-        <p style={textStyle}>
-          spawarkilaserowe.com to niezalezny serwis informacyjny poswiecony spawarkam laserowym
-          fiber dla przemyslu. Zbieramy specyfikacje, piszemy porownania i poradniki zakupowe, zeby
-          firmy produkcyjne mogly swiadomie wybrac model dopasowany do swojej produkcji.
-        </p>
-        <p style={textStyle}>
-          Serwis powstał z obserwacji, że rynek spawarek laserowych w Polsce jest trudny do
-          nawigacji dla kupującego - ceny są dostępne tylko na zapytanie, oferty są trudno
-          porównywalne, a materiał edukacyjny w języku polskim jest rozproszony lub powierzchowny.
-          Staramy się to zmieniać, dostarczając rzetelne informacje i bezpłatne doradztwo przed
-          zakupem.
-        </p>
-        <p style={textStyle}>
-          Odpowiadamy na pytania przez formularz kontaktowy w ciągu jednego dnia roboczego. Nie
-          wywieramy presji sprzedażowej - naszym sukcesem jest firma, która kupiła maszynę
-          dopasowaną do swoich potrzeb.
-        </p>
-      </section>
-
-      {/* Dla kogo */}
-      <section style={sectionStyle}>
-        <h2 style={headingStyle}>Dla kogo jest ten serwis</h2>
-        <p style={textStyle}>
-          Serwis skierowany jest przede wszystkim do właścicieli firm, kierowników produkcji i
-          specjalistów ds. inwestycji w polskich przedsiębiorstwach z sektora MŚP, które pracują z
-          metalem lub rozważają wejście w technologię spawania laserowego.
-        </p>
-        <p style={textStyle}>
-          Typowy odbiorca to firma zatrudniająca od kilku do kilkuset pracowników, działająca w
-          jednej z następujących branż: obróbka metalu i blach, konstrukcje stalowe, podwykonawstwo
-          dla motoryzacji, branża HVAC (klimatyzacja, wentylacja, ogrzewanie), produkcja elementów
-          ze stali nierdzewnej lub aluminium, a także ogólna produkcja kontraktowa i serwisowanie.
-        </p>
-        <p style={textStyle}>
-          Odpowiadamy zarówno na pytania firm, które nigdy nie miały spawarkę laserową i
-          rozważają pierwszą inwestycję, jak i tych, które już posiadają maszynę i zastanawiają się
-          nad rozbudową parku maszynowego lub zmianą dostawcy.
-        </p>
-      </section>
-
-      {/* Co znajdziesz */}
-      <section style={sectionStyle}>
-        <h2 style={headingStyle}>Co znajdziesz na tej stronie</h2>
-        <p style={textStyle}>
-          Serwis składa się z kilku obszarów treściowych, z których każdy odpowiada na inny etap
-          procesu decyzyjnego.
-        </p>
-
-        <div style={accentLineStyle}>
-          <p style={{ ...textStyle, marginBottom: 0 }}>
-            <strong>Katalog modeli (/modele)</strong> - zestawienie 6 modeli spawarek laserowych w 2
-            kategoriach (ręczne handheld 1–3 kW, automatyczne stacje spawalnicze)
-            z opisem przeznaczenia, specyfikacjami i grubościami spawania. Służy jako punkt wyjścia do
-            rozmowy o doborze maszyny.
+    <div>
+      {/* Header */}
+      <div style={{ backgroundColor: '#0D1117' }} className="py-14">
+        <div className="max-w-3xl mx-auto px-6">
+          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#06B6D4' }}>
+            spawarkilaserowe.com
+          </p>
+          <h1
+            className="text-4xl md:text-5xl font-black text-white mb-3"
+            style={{ letterSpacing: '-0.03em', fontFamily: 'var(--font-rubik)' }}
+          >
+            O serwisie
+          </h1>
+          <p className="text-lg" style={{ color: 'rgba(255,255,255,0.55)' }}>
+            Autoryzowany dealer BLink Laser w Polsce — katalog, porównania i bezpłatne doradztwo przed zakupem.
           </p>
         </div>
+      </div>
 
-        <div style={accentLineStyle}>
-          <p style={{ ...textStyle, marginBottom: 0 }}>
-            <strong>Blog edukacyjny (/blog)</strong> - pogłębione artykuły poruszające następujące
-            tematy: kryteria wyboru spawarki laserowej, spawanie stali nierdzewnej, całkowity koszt
-            posiadania (TCO) i ceny maszyn, porównanie lasera z TIG/MIG, koszty eksploatacji i
-            materiały eksploatacyjne, najczęstsze błędy przy zakupie, przygotowanie hali
-            produkcyjnej pod instalację maszyny, serwis i wsparcie techniczne, a także obliczanie
-            zwrotu z inwestycji (ROI).
-          </p>
-        </div>
+      <div className="max-w-3xl mx-auto px-6 py-16 flex flex-col gap-12">
 
-        <div style={accentLineStyle}>
-          <p style={{ ...textStyle, marginBottom: 0 }}>
-            <strong>Bezpłatne doradztwo (/kontakt)</strong> - formularz, przez który można opisać
-            swoją sytuację produkcyjną i zapytać o rekomendację konkretnego modelu. Odpowiadamy
-            merytorycznie, z uzasadnieniem wyboru.
+        {/* Czym jest */}
+        <section>
+          <h2 className="text-xl font-black mb-4" style={{ letterSpacing: '-0.01em' }}>Czym jest ten serwis</h2>
+          <p className="text-base leading-relaxed mb-4" style={{ color: 'var(--fg-secondary)' }}>
+            spawarkilaserowe.com to serwis informacyjny i sprzedażowy poświęcony spawarkom laserowym fiber marki BLink Laser.
+            Jesteśmy autoryzowanym dealerem w Polsce — sprzedajemy maszyny z gwarancją producenta, prowadzimy instalację,
+            szkolenia i serwis pogwarancyjny.
           </p>
-        </div>
-      </section>
+          <p className="text-base leading-relaxed mb-4" style={{ color: 'var(--fg-secondary)' }}>
+            Serwis powstał z obserwacji, że rynek spawarek laserowych w Polsce jest trudny do nawigacji dla kupującego —
+            ceny dostępne tylko na zapytanie, oferty trudno porównywalne, a materiał edukacyjny w polskim języku rozproszony
+            i powierzchowny. Staramy się to zmieniać: jawne ceny, konkretne tabele specyfikacji i rzetelne odpowiedzi
+            na pytania przed zakupem.
+          </p>
+          <p className="text-base leading-relaxed" style={{ color: 'var(--fg-secondary)' }}>
+            Jeśli 1500W wystarczy do Twojej produkcji — powiemy to. Nie zaproponujemy droższego modelu dla wyższej marży.
+            Naszym celem jest zakład, który kupił maszynę dopasowaną do potrzeb i zwrócił inwestycję w zakładanym czasie.
+          </p>
+        </section>
 
-      {/* Trzy klasy maszyn */}
-      <section style={sectionStyle}>
-        <h2 style={headingStyle}>Trzy klasy spawarek laserowych</h2>
-        <p style={{ ...mutedStyle, marginBottom: '1.5rem' }}>
-          Kategoryzujemy maszyny w trzech klasach odpowiadających realnym potrzebom produkcyjnym
-          polskich firm. Każda klasa to zbiór cech i kompromisów dopasowanych do skali i charakteru
-          produkcji.
-        </p>
+        {/* Dla kogo */}
+        <section>
+          <h2 className="text-xl font-black mb-4" style={{ letterSpacing: '-0.01em' }}>Dla kogo</h2>
+          <p className="text-base leading-relaxed mb-4" style={{ color: 'var(--fg-secondary)' }}>
+            Główny odbiorca to właściciele firm, kierownicy produkcji i specjaliści ds. inwestycji w polskich
+            przedsiębiorstwach z sektora MŚP, które pracują z metalem lub rozważają wejście w technologię spawania laserowego.
+          </p>
+          <p className="text-base leading-relaxed" style={{ color: 'var(--fg-secondary)' }}>
+            Typowy profil: firma od kilku do kilkuset pracowników, działająca w obróbce metalu, konstrukcjach stalowych,
+            kooperacji dla motoryzacji, branży HVAC lub produkcji ze stali nierdzewnej i aluminium. Obsługujemy
+            zarówno firmy przy pierwszej inwestycji w laser, jak i te rozbudowujące istniejący park maszynowy.
+          </p>
+        </section>
 
-        <div style={cardStyle}>
-          <h3 style={{ fontWeight: 700, color: 'var(--fg)', marginBottom: '0.5rem' }}>
-            Ręczne 1–1,5 kW - dla mniejszych zakładów
-          </h3>
-          <p style={textStyle}>
-            Spawarki ręczne SL1000H i SL1500H to punkt wejścia w technologię laserową. Operator
-            prowadzi głowicę ręcznie, co daje elastyczność przy spawaniu dużych lub nieregularnych
-            detali. Sprawdzają się przy spawaniu stali nierdzewnej do 5–6 mm i aluminium do 4 mm.
+        {/* Trzy klasy maszyn */}
+        <section>
+          <h2 className="text-xl font-black mb-4" style={{ letterSpacing: '-0.01em' }}>Trzy klasy mocy</h2>
+          <p className="text-base leading-relaxed mb-6" style={{ color: 'var(--fg-secondary)' }}>
+            Katalog obejmuje 12 konfiguracji w trzech klasach mocy — każda dostępna z kombinacją pojedynczej
+            lub podwójnej oscylacji głowicy i pojedynczego lub podwójnego podajnika drutu.
           </p>
-          <p style={{ ...textStyle, marginBottom: 0 }}>
-            Prosta obsługa — operator samodzielnie pracuje po 1–2 dniach szkolenia.
-            Ceny od ok. 28 000 zł netto.
-          </p>
-        </div>
 
-        <div style={cardStyle}>
-          <h3 style={{ fontWeight: 700, color: 'var(--fg)', marginBottom: '0.5rem' }}>
-            Ręczne 2–3 kW - do intensywnej produkcji
-          </h3>
-          <p style={textStyle}>
-            Spawarki SL2000H i SL3000H przeznaczone są dla zakładów z wyższym wolumenem i grubszymi
-            materiałami. Moc 2 kW pozwala spawać stal do 12 mm, nierdzewną do 8 mm. Model 3 kW
-            obsługuje stal do 20 mm i jest wybierany przez kooperantów pracujących na dwie zmiany.
-          </p>
-          <p style={{ ...textStyle, marginBottom: 0 }}>
-            Najwyższy zakres ręcznych spawarek laserowych - zachowują elastyczność przy zachowaniu
-            wysokiej przepustowości. Ceny od ok. 65 000 zł netto.
-          </p>
-        </div>
+          <div className="flex flex-col gap-4">
+            {[
+              {
+                model: 'Blink 1500W',
+                subtitle: 'Wejście w technologię laserową',
+                body: 'Stal węglowa do 10 mm, nierdzewka do 6 mm, aluminium do 4 mm. Optymalny wybór dla zakładów przechodzących z TIG/MIG po raz pierwszy. Operator samodzielnie pracuje po 1–2 dniach szkolenia. Ceny od 39 000 zł netto.',
+              },
+              {
+                model: 'Blink 2000W',
+                subtitle: 'Codzienna produkcja — najczęściej wybierany',
+                body: 'Stal węglowa do 12 mm, nierdzewka do 8 mm, aluminium do 6 mm. Złoty środek dla zakładów z regularnym wolumenem — wyraźna przewaga prędkości nad 1500W na materiałach powyżej 5 mm. Ceny od 45 000 zł netto.',
+              },
+              {
+                model: 'Blink 3000W',
+                subtitle: 'Intensywna produkcja i grube elementy',
+                body: 'Stal węglowa do 20 mm, nierdzewka do 12 mm, aluminium do 10 mm. Dla zakładów pracujących na dwie zmiany lub z regularnym zapotrzebowaniem na spawanie grubych detali stalowych. Ceny od 54 000 zł netto.',
+              },
+            ].map((tier) => (
+              <div
+                key={tier.model}
+                className="p-6 rounded-2xl border"
+                style={{ borderColor: 'var(--border)', backgroundColor: 'var(--bg-card)' }}
+              >
+                <div className="flex items-center gap-3 mb-2">
+                  <span
+                    className="text-sm font-black px-2.5 py-0.5 rounded-full"
+                    style={{ backgroundColor: '#06B6D4', color: '#0D1117' }}
+                  >
+                    {tier.model}
+                  </span>
+                  <span className="text-sm font-semibold" style={{ color: 'var(--muted)' }}>{tier.subtitle}</span>
+                </div>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--fg-secondary)' }}>{tier.body}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
-        <div style={cardStyle}>
-          <h3 style={{ fontWeight: 700, color: 'var(--fg)', marginBottom: '0.5rem' }}>
-            Automatyczne stacje spawalnicze - do produkcji seryjnej
-          </h3>
-          <p style={textStyle}>
-            SL2000A i SL3000A wyposażone są w stolik CNC z uchwytem i programowalnym sterownikiem.
-            Powtarzalność 0,02 mm — każda sztuka identyczna. SL3000A z podwójnym wymiennym stołem
-            umożliwia ciągłą produkcję bez przestoju przy załadunku.
-          </p>
-          <p style={{ ...textStyle, marginBottom: 0 }}>
-            Dla zakładów z produkcją seryjną standaryzowanych detali. Ceny od ok. 180 000 zł netto.
-          </p>
-        </div>
-      </section>
+        {/* FAQ */}
+        <section>
+          <h2 className="text-xl font-black mb-6" style={{ letterSpacing: '-0.01em' }}>Częste pytania o serwis</h2>
+          <div className="flex flex-col gap-6">
+            {[
+              {
+                q: 'Czy jesteście autoryzowanym dealerem BLink Laser?',
+                a: 'Tak. Sprzedajemy maszyny z gwarancją producenta, prowadzimy instalację i szkolenia, zapewniamy serwis pogwarancyjny. Kupujesz bezpośrednio — bez pośrednika.',
+              },
+              {
+                q: 'Czy doradztwo przed zakupem jest bezpłatne?',
+                a: 'Tak, bezpłatnie i bez zobowiązań. Formularz kontaktowy nie wymaga podawania danych firmy. Odpowiadamy merytorycznie — z rekomendacją konkretnego modelu i uzasadnieniem.',
+              },
+              {
+                q: 'Jak szybko można otrzymać maszynę?',
+                a: 'Standardowy czas dostawy to 4–6 tygodni od złożenia zamówienia. Przy dostępności z magazynu europejskiego — 2–3 tygodnie.',
+              },
+              {
+                q: 'Co obejmuje serwis pogwarancyjny?',
+                a: 'Przeglądy, wymiana elementów optycznych, naprawa układu chłodzenia i toru laserowego. Części na magazynie w Polsce — czas reakcji do 48h roboczych.',
+              },
+              {
+                q: 'Jak się skontaktować?',
+                a: 'Przez formularz na stronie /kontakt lub telefonicznie +48 570 854 886. Odpowiadamy w ciągu jednego dnia roboczego, Pn–Pt 8:00–17:00.',
+              },
+            ].map((item) => (
+              <div key={item.q}>
+                <p className="font-bold mb-1.5" style={{ color: 'var(--fg)' }}>{item.q}</p>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
-      {/* Jak działamy */}
-      <section style={sectionStyle}>
-        <h2 style={headingStyle}>Jak działamy</h2>
-        <p style={textStyle}>
-          Proces jest prosty. Firma wypełnia formularz na stronie /kontakt, opisując swoją
-          sytuację: branżę, skalę produkcji, rodzaj spawanych materiałów, budżet inwestycji i
-          oczekiwany czas zwrotu. Można też po prostu opisać problem, który firma chce rozwiązać.
-        </p>
-        <p style={textStyle}>
-          Odpowiadamy w ciągu jednego dnia roboczego. Nasza odpowiedź jest merytoryczna - zawiera
-          rekomendację konkretnego modelu z uzasadnieniem, ewentualne pytania doprecyzowujące lub
-          wskazanie artykułów z naszego bloga, które odpowiadają na pytanie bardziej szczegółowo.
-        </p>
-        <p style={textStyle}>
-          Jeśli firma zdecyduje się na zakup, prowadzimy ją przez cały proces - od wyboru
-          konfiguracji, przez zamówienie, dostawę, aż po instalację i szkolenie. Jako autoryzowany
-          dealer BLink Laser zapewniamy gwarancję producenta i serwis w Polsce.
-        </p>
-      </section>
-
-      {/* FAQ redakcyjne */}
-      <section style={sectionStyle}>
-        <h2 style={headingStyle}>Częste pytania o ten serwis</h2>
-
-        <div style={{ marginBottom: '1.5rem' }}>
-          <p style={faqQuestionStyle}>Czy jesteście autoryzowanym dealerem BLink Laser?</p>
-          <p style={{ ...mutedStyle, marginBottom: 0 }}>
-            Tak. Jesteśmy autoryzowanym dealerem BLink Laser w Polsce. Sprzedajemy maszyny z
-            gwarancją producenta, prowadzimy instalację i szkolenia, zapewniamy serwis pogwarancyjny.
-          </p>
-        </div>
-
-        <div style={{ marginBottom: '1.5rem' }}>
-          <p style={faqQuestionStyle}>Skąd pochodzi wiedza prezentowana na stronie?</p>
-          <p style={{ ...mutedStyle, marginBottom: 0 }}>
-            Treści przygotowywane są w oparciu o dokumentację techniczną producenta, doświadczenie
-            z instalacji maszyn u klientów oraz rozmowy z firmami produkcyjnymi. Staramy się być
-            rzetelni i zaznaczamy, kiedy coś jest naszą oceną, a kiedy faktem technicznym.
-          </p>
-        </div>
-
-        <div style={{ marginBottom: '1.5rem' }}>
-          <p style={faqQuestionStyle}>Czy doradztwo przed zakupem jest bezpłatne?</p>
-          <p style={{ ...mutedStyle, marginBottom: 0 }}>
-            Tak, doradztwo i konsultacja doboru maszyny są bezpłatne i bez zobowiązań. Formularz
-            kontaktowy nie wymaga podawania danych firmy poza adresem e-mail lub telefonem.
-          </p>
-        </div>
-
-        <div style={{ marginBottom: '1.5rem' }}>
-          <p style={faqQuestionStyle}>Czy można zamówić maszynę przez ten serwis?</p>
-          <p style={{ ...mutedStyle, marginBottom: 0 }}>
-            Tak. Obsługujemy cały proces zakupu - od wyboru modelu, przez
-            złożenie zamówienia u producenta, po dostawę, instalację i odbiór maszyny w Polsce.
-          </p>
-        </div>
-
-        <div style={{ marginBottom: 0 }}>
-          <p style={faqQuestionStyle}>Jak się z wami skontaktować?</p>
-          <p style={{ ...mutedStyle, marginBottom: 0 }}>
-            Przez formularz na stronie /kontakt lub telefonicznie pod numer +48 570 854 886.
-            Odpowiadamy w ciągu jednego dnia roboczego.
-          </p>
-        </div>
-      </section>
+      </div>
     </div>
   )
 }
