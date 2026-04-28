@@ -1,6 +1,6 @@
 {
   "main": [
-    { "label": "Poradniki", "href": "/poradniki" },
+    { "label": "Zastosowania", "href": "/zastosowania" },
     { "label": "Porównaj", "href": "/porownaj" },
     { "label": "Modele", "href": "/modele" },
     { "label": "Kontakt", "href": "/kontakt" }
