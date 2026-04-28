@@ -16,13 +16,13 @@ export function CtaBanner() {
 
           <div className="relative max-w-lg">
             <p className="text-[11px] font-bold uppercase tracking-widest mb-3" style={{ color: '#06B6D4' }}>
-              Bezpłatna konsultacja — odpowiedź w 24h
+              Bezpłatna konsultacja: odpowiedź w 24h
             </p>
             <h2 className="text-2xl md:text-3xl font-black mb-3 text-white" style={{ letterSpacing: '-0.025em' }}>
               Opisz co spawasz. Dobierzemy model i wycenimy.
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.45)' }}>
-              Materiał, grubość, miesięczny wolumen — trzy informacje wystarczą.
+              Materiał, grubość, miesięczny wolumen: trzy informacje wystarczą.
               Odpiszemy z rekomendacją konkretnego wariantu, ceną i uzasadnieniem.
             </p>
           </div>

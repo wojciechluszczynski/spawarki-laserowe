@@ -3,7 +3,7 @@ import { IconFactory } from '@/components/ui/Icons'
 const industries = [
   {
     name: 'Konstrukcje stalowe',
-    desc: 'Ramy, trawersy, kratownice — spawanie do 20 mm jedną głowicą, bez wymiany urządzenia.',
+    desc: 'Ramy, trawersy, kratownice: spawanie do 20 mm jedną głowicą, bez wymiany urządzenia.',
   },
   {
     name: 'Produkcja ze stali nierdzewnej',
@@ -11,15 +11,15 @@ const industries = [
   },
   {
     name: 'Automotive i kooperacja',
-    desc: 'Uchwyty, wsporniki, elementy podwozia — precyzja bez odkształceń termicznych na cienkiej blasze.',
+    desc: 'Uchwyty, wsporniki, elementy podwozia: precyzja bez odkształceń termicznych na cienkiej blasze.',
   },
   {
     name: 'HVAC i wentylacja',
-    desc: 'Kanały, kołnierze, skrzynki rozdzielcze — nierdzewka do 8 mm z estetyką gotową do montażu.',
+    desc: 'Kanały, kołnierze, skrzynki rozdzielcze: nierdzewka do 8 mm z estetyką gotową do montażu.',
   },
   {
     name: 'Meble metalowe i design',
-    desc: 'Spoiny widoczne w finalnym produkcie — laser daje jakość niemożliwą do osiągnięcia TIG-iem w porównywalnym czasie.',
+    desc: 'Spoiny widoczne w finalnym produkcie: laser daje jakość niemożliwą do osiągnięcia TIG-iem w porównywalnym czasie.',
   },
   {
     name: 'Migracja z TIG i MIG',

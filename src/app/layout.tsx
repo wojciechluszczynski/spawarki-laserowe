@@ -1,15 +1,15 @@
 import type { Metadata } from 'next'
-import { Rubik, Inter } from 'next/font/google'
+import { Space_Grotesk, Inter } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/ui/Header'
 import { Footer } from '@/components/ui/Footer'
 import { FloatingCta } from '@/components/ui/FloatingCta'
 import { Analytics } from '@vercel/analytics/next'
 
-const rubik = Rubik({
-  subsets: ['latin', 'latin-ext'],
+const rubik = Space_Grotesk({
+  subsets: ['latin'],
   variable: '--font-rubik',
-  weight: ['400', '500', '600', '700', '800', '900'],
+  weight: ['400', '500', '600', '700'],
 })
 
 const inter = Inter({

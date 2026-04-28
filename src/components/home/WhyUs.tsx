@@ -1,13 +1,13 @@
 const reasons = [
   {
     num: '01',
-    title: 'Autoryzowany dealer — gwarancja producenta',
+    title: 'Autoryzowany dealer: gwarancja producenta',
     desc: 'Kupujesz bezpośrednio od autoryzowanego dealera BLink Laser w Polsce. Gwarancja producenta, nie resellerska. Dokumentacja techniczna prosto od wytwórcy.',
   },
   {
     num: '02',
-    title: 'Serwis w Polsce — reakcja w 48h',
-    desc: 'Części zamienne na magazynie w kraju. Czas reakcji serwisu do 48h roboczych. Brak tygodniowych przestojów na import — to realna różnica przy maszynie pracującej na zmianę.',
+    title: 'Serwis w Polsce: reakcja w 48h',
+    desc: 'Części zamienne na magazynie w kraju. Czas reakcji serwisu do 48h roboczych. Brak tygodniowych przestojów na import: to realna różnica przy maszynie pracującej na zmianę.',
   },
   {
     num: '03',
@@ -16,8 +16,8 @@ const reasons = [
   },
   {
     num: '04',
-    title: 'Merytorycznie — nie tylko sprzedażowo',
-    desc: 'Jeśli 1500W wystarczy do Twojej produkcji — powiemy to wprost. Nie zaproponujemy 3000W dla wyższej marży. Naszym celem jest maszyna, która zarobi na siebie w zakładanym czasie.',
+    title: 'Merytorycznie: nie tylko sprzedażowo',
+    desc: 'Jeśli 1500W wystarczy do Twojej produkcji: powiemy to wprost. Nie zaproponujemy 3000W dla wyższej marży. Naszym celem jest maszyna, która zarobi na siebie w zakładanym czasie.',
   },
 ]
 
@@ -33,7 +33,7 @@ export function WhyUs() {
             Co różni nas od zwykłego sklepu
           </h2>
           <p style={{ color: 'var(--muted)' }}>
-            Nie wystawiamy faktur i znikamy. Współpracujemy z zakładem przez cały cykl — od doboru modelu po serwis pogwarancyjny.
+            Nie wystawiamy faktur i znikamy. Współpracujemy z zakładem przez cały cykl: od doboru modelu po serwis pogwarancyjny.
           </p>
         </div>
 

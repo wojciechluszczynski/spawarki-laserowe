@@ -27,7 +27,7 @@ export function Hero() {
           Autoryzowany dealer BLink Laser · Serwis w Polsce
         </div>
 
-        {/* H1 — numbers-first, claim-style */}
+        {/* H1: numbers-first, claim-style */}
         <h1
           className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-[1.06]"
           style={{ letterSpacing: '-0.035em', fontFamily: 'var(--font-rubik)', maxWidth: '800px' }}
@@ -37,7 +37,7 @@ export function Hero() {
         </h1>
 
         <p className="text-base md:text-lg mb-10 max-w-xl leading-relaxed" style={{ color: 'rgba(255,255,255,0.6)' }}>
-          Spawarki Blink 1500–3000W — porównania modeli, tabele grubości materiałów
+          Spawarki Blink 1500–3000W: porównania modeli, tabele grubości materiałów
           i bezpłatne doradztwo w&nbsp;24h. Dobieramy maszynę do Twojej produkcji.
         </p>
 

@@ -2,17 +2,17 @@ const steps = [
   {
     n: '01',
     label: 'Wypełnij formularz w 2 minuty',
-    desc: 'Materiał, grubość, skala produkcji. Tyle wystarczy — resztę wyjaśniamy przez telefon lub e-mail.',
+    desc: 'Materiał, grubość, skala produkcji. Tyle wystarczy: resztę wyjaśniamy przez telefon lub e-mail.',
   },
   {
     n: '02',
     label: 'Otrzymujesz konkretną rekomendację',
-    desc: 'Nie ofertę "do wyboru" — konkretny model z uzasadnieniem: dlaczego ten, a nie droższy. W ciągu jednego dnia roboczego.',
+    desc: 'Nie ofertę "do wyboru": konkretny model z uzasadnieniem: dlaczego ten, a nie droższy. W ciągu jednego dnia roboczego.',
   },
   {
     n: '03',
     label: 'Demo na Twoim materiale',
-    desc: 'Przed decyzją organizujemy spawanie próbne — na materiale, który faktycznie produkujesz, z oczekiwaną grubością i spoiną.',
+    desc: 'Przed decyzją organizujemy spawanie próbne: na materiale, który faktycznie produkujesz, z oczekiwaną grubością i spoiną.',
   },
   {
     n: '04',

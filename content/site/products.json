@@ -2,7 +2,7 @@
   {
     "family": "BLS1500",
     "name": "Blink 1500W",
-    "image": "/images/spawarka-1500w-double-double.jpg",
+    "image": "/images/spawarka-blink.jpg",
     "workArea": "Ręczna 4w1",
     "description": "Spawarka laserowa 4w1 Blink 1500W — spawanie, czyszczenie, hartowanie, lutowanie laserowe. Podwójny podajnik drutu i podwójna oscylacja głowicy dla wyższej jakości spoiny.",
     "materialThickness": { "stal": "10 mm", "nierdzewna": "6 mm", "aluminium": "4 mm" },
@@ -17,7 +17,7 @@
   {
     "family": "BLS2000",
     "name": "Blink 2000W",
-    "image": "/images/spawarka-2000w-double-double.jpg",
+    "image": "/images/spawarka-blink-2.jpg",
     "workArea": "Ręczna 4w1",
     "description": "Spawarka laserowa 4w1 Blink 2000W — wyższa moc do grubszych materiałów i wyższej prędkości spawania. Podwójna oscylacja głowicy i podwójny podajnik drutu.",
     "materialThickness": { "stal": "12 mm", "nierdzewna": "8 mm", "aluminium": "6 mm" },
@@ -32,7 +32,7 @@
   {
     "family": "BLS3000",
     "name": "Blink 3000W",
-    "image": "/images/spawarka-3000w-double-double.jpg",
+    "image": "/images/spawarka-blink-3.jpg",
     "workArea": "Ręczna 4w1",
     "description": "Flagowa spawarka laserowa 4w1 Blink 3000W dla najbardziej wymagających zastosowań. Najwyższa moc w segmencie ręcznym — spawanie grubych elementów stalowych i aluminiowych.",
     "materialThickness": { "stal": "20 mm", "nierdzewna": "12 mm", "aluminium": "10 mm" },

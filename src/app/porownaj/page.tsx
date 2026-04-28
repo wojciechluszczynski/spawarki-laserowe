@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ComparisonTable } from '@/components/compare/ComparisonTable'
 
 export const metadata: Metadata = {
-  title: 'Porównanie spawarek laserowych — laser vs TIG, MIG, moc 1500–3000W',
+  title: 'Porównanie spawarek laserowych: laser vs TIG, MIG, moc 1500–3000W',
   description:
     'Tabele porównawcze: spawarka laserowa vs TIG/MIG, pojedyncza vs podwójna oscylacja, dobór mocy 1500–3000W. Niezależna analiza dla firm produkcyjnych.',
 }
@@ -48,7 +48,7 @@ const POWER_CARDS = [
     label: 'Najczęściej wybierany',
     priceFrom: '45 000',
     description:
-      'Stal węglowa do 12 mm, nierdzewka do 8 mm, aluminium do 6 mm. Złoty środek — wyraźna przewaga prędkości nad 1500W, uzasadniona przy regularnej produkcji.',
+      'Stal węglowa do 12 mm, nierdzewka do 8 mm, aluminium do 6 mm. Złoty środek: wyraźna przewaga prędkości nad 1500W, uzasadniona przy regularnej produkcji.',
     highlight: true,
   },
   {
@@ -56,7 +56,7 @@ const POWER_CARDS = [
     label: 'Intensywna produkcja',
     priceFrom: '54 000',
     description:
-      'Stal węglowa do 20 mm, nierdzewka do 12 mm, aluminium do 10 mm. Maksymalna moc ręczna — wybór przy pracy dwuzmianowej i grubych elementach.',
+      'Stal węglowa do 20 mm, nierdzewka do 12 mm, aluminium do 10 mm. Maksymalna moc ręczna: wybór przy pracy dwuzmianowej i grubych elementach.',
   },
 ]
 
@@ -65,37 +65,37 @@ const USE_CASE_ROWS = [
     profile: 'Mały zakład ślusarski',
     volume: 'do 50 zleceń/mies.',
     materials: 'stal do 8 mm',
-    recommendation: 'BLS1500 — pojedyncza oscylacja',
+    recommendation: 'BLS1500: pojedyncza oscylacja',
   },
   {
     profile: 'Producent mebli metalowych',
     volume: '50–150 zleceń/mies.',
     materials: 'nierdzewka, aluminium do 5 mm',
-    recommendation: 'BLS1500 lub BLS2000 — podwójna oscylacja',
+    recommendation: 'BLS1500 lub BLS2000: podwójna oscylacja',
   },
   {
     profile: 'Producent konstrukcji stalowych',
     volume: '100+ zleceń/mies.',
     materials: 'stal węglowa do 12 mm',
-    recommendation: 'BLS2000 — podwójny podajnik',
+    recommendation: 'BLS2000: podwójny podajnik',
   },
   {
     profile: 'Automotive / uchwyty, wsporniki',
     volume: 'seria powtarzalna',
     materials: 'stal, nierdzewka do 6 mm',
-    recommendation: 'BLS2000 — podwójna oscylacja + podwójny podajnik',
+    recommendation: 'BLS2000: podwójna oscylacja + podwójny podajnik',
   },
   {
     profile: 'HVAC, kanały, kołnierze',
     volume: '200+ zleceń/mies.',
     materials: 'nierdzewka 1–4 mm',
-    recommendation: 'BLS2000 — podwójna oscylacja',
+    recommendation: 'BLS2000: podwójna oscylacja',
   },
   {
     profile: 'Produkcja ciężka, stal gruba',
     volume: 'dwie zmiany',
     materials: 'stal do 20 mm',
-    recommendation: 'BLS3000 — podwójny podajnik',
+    recommendation: 'BLS3000: podwójny podajnik',
   },
 ]
 
@@ -127,13 +127,13 @@ export default function PorownajPage() {
         <section>
           <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: 'var(--muted)' }}>Sekcja 1</p>
           <ComparisonTable
-            title="Spawarka laserowa vs TIG vs MIG — kluczowe parametry"
+            title="Spawarka laserowa vs TIG vs MIG: kluczowe parametry"
             headers={['Kryterium', 'Laser światłowodowy', 'TIG (WIG)', 'MIG/MAG']}
             rows={LASER_VS_TIG_MIG_ROWS}
             footnote="Ceny orientacyjne netto. Koszt gazu osłonowego przy ciągłej pracy 8h/dzień."
           />
           <p className="mt-5 text-base leading-relaxed max-w-3xl" style={{ color: 'var(--fg-secondary)' }}>
-            Laser wygrywa prędkością i estetyką spoiny — zwłaszcza na nierdzewce i aluminium.
+            Laser wygrywa prędkością i estetyką spoiny: zwłaszcza na nierdzewce i aluminium.
             TIG pozostaje uzasadniony przy pracach artystycznych i bardzo cienkich materiałach (poniżej 0,5 mm).
             MIG jest tańszy w zakupie, ale wyższe koszty gazu, szlifowania i czasu operatora zniwelują różnicę w 2–3 lata.
           </p>
@@ -149,9 +149,9 @@ export default function PorownajPage() {
           />
           <p className="mt-5 text-base leading-relaxed max-w-3xl" style={{ color: 'var(--fg-secondary)' }}>
             Podwójna oscylacja to wiązka poruszająca się jednocześnie w dwóch osiach.
-            Spoina jest szersza i lepiej wtopiona — mniejsza porowatość, lepsza estetyka.
+            Spoina jest szersza i lepiej wtopiona: mniejsza porowatość, lepsza estetyka.
             Przy spawaniu stali nierdzewnej i aluminium podwójna oscylacja daje wyraźnie lepszy wynik.
-            Różnica cenowa wynosi ok. 3 000 PLN netto — zwraca się szybko przy zleceniach wymagających wysokiej estetyki.
+            Różnica cenowa wynosi ok. 3 000 PLN netto: zwraca się szybko przy zleceniach wymagających wysokiej estetyki.
           </p>
         </section>
 
@@ -165,7 +165,7 @@ export default function PorownajPage() {
           />
           <p className="mt-5 text-base leading-relaxed max-w-3xl" style={{ color: 'var(--fg-secondary)' }}>
             Podwójny podajnik to dwie szpule drutu załadowane jednocześnie.
-            Operator przełącza się między nimi bez przerywania pracy — szczególnie przydatne przy produkcji mieszanej
+            Operator przełącza się między nimi bez przerywania pracy: szczególnie przydatne przy produkcji mieszanej
             (np. stal węglowa i nierdzewna w jednej sesji) lub przy długich sesjach wymagających ciągłości.
           </p>
         </section>
@@ -278,7 +278,7 @@ export default function PorownajPage() {
               Nie wiesz który wariant wybrać?
             </p>
             <p className="text-sm" style={{ color: 'rgba(255,255,255,0.5)' }}>
-              Opisz co spawasz, grubość materiału i miesięczny wolumen — dobierzemy model z uzasadnieniem.
+              Opisz co spawasz, grubość materiału i miesięczny wolumen: dobierzemy model z uzasadnieniem.
             </p>
           </div>
           <Link

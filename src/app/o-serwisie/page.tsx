@@ -1,13 +1,13 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'O serwisie — spawarkilaserowe.com',
+  title: 'O serwisie: spawarkilaserowe.com',
   description:
     'Autoryzowany dealer BLink Laser w Polsce. Katalog spawarek laserowych 1500–3000W, porównania, poradniki zakupowe i bezpłatne doradztwo techniczne dla firm produkcyjnych.',
   openGraph: {
     title: 'O serwisie spawarkilaserowe.com',
     description:
-      'Autoryzowany dealer BLink Laser. Katalog modeli, poradniki i bezpłatne doradztwo — dobieramy maszynę do Twojej produkcji.',
+      'Autoryzowany dealer BLink Laser. Katalog modeli, poradniki i bezpłatne doradztwo: dobieramy maszynę do Twojej produkcji.',
   },
 }
 
@@ -27,7 +27,7 @@ export default function OSerwisiePage() {
             O serwisie
           </h1>
           <p className="text-lg" style={{ color: 'rgba(255,255,255,0.55)' }}>
-            Autoryzowany dealer BLink Laser w Polsce — katalog, porównania i bezpłatne doradztwo przed zakupem.
+            Autoryzowany dealer BLink Laser w Polsce: katalog, porównania i bezpłatne doradztwo przed zakupem.
           </p>
         </div>
       </div>
@@ -39,7 +39,7 @@ export default function OSerwisiePage() {
           <h2 className="text-xl font-black mb-4" style={{ letterSpacing: '-0.01em' }}>Czym jest ten serwis</h2>
           <p className="text-base leading-relaxed mb-4" style={{ color: 'var(--fg-secondary)' }}>
             spawarkilaserowe.com to serwis informacyjny i sprzedażowy poświęcony spawarkom laserowym fiber marki BLink Laser.
-            Jesteśmy autoryzowanym dealerem w Polsce — sprzedajemy maszyny z gwarancją producenta, prowadzimy instalację,
+            Jesteśmy autoryzowanym dealerem w Polsce: sprzedajemy maszyny z gwarancją producenta, prowadzimy instalację,
             szkolenia i serwis pogwarancyjny.
           </p>
           <p className="text-base leading-relaxed mb-4" style={{ color: 'var(--fg-secondary)' }}>
@@ -49,7 +49,7 @@ export default function OSerwisiePage() {
             na pytania przed zakupem.
           </p>
           <p className="text-base leading-relaxed" style={{ color: 'var(--fg-secondary)' }}>
-            Jeśli 1500W wystarczy do Twojej produkcji — powiemy to. Nie zaproponujemy droższego modelu dla wyższej marży.
+            Jeśli 1500W wystarczy do Twojej produkcji: powiemy to. Nie zaproponujemy droższego modelu dla wyższej marży.
             Naszym celem jest zakład, który kupił maszynę dopasowaną do potrzeb i zwrócił inwestycję w zakładanym czasie.
           </p>
         </section>
@@ -72,7 +72,7 @@ export default function OSerwisiePage() {
         <section>
           <h2 className="text-xl font-black mb-4" style={{ letterSpacing: '-0.01em' }}>Trzy klasy mocy</h2>
           <p className="text-base leading-relaxed mb-6" style={{ color: 'var(--fg-secondary)' }}>
-            Katalog obejmuje 12 konfiguracji w trzech klasach mocy — każda dostępna z kombinacją pojedynczej
+            Katalog obejmuje 12 konfiguracji w trzech klasach mocy: każda dostępna z kombinacją pojedynczej
             lub podwójnej oscylacji głowicy i pojedynczego lub podwójnego podajnika drutu.
           </p>
 
@@ -85,8 +85,8 @@ export default function OSerwisiePage() {
               },
               {
                 model: 'Blink 2000W',
-                subtitle: 'Codzienna produkcja — najczęściej wybierany',
-                body: 'Stal węglowa do 12 mm, nierdzewka do 8 mm, aluminium do 6 mm. Złoty środek dla zakładów z regularnym wolumenem — wyraźna przewaga prędkości nad 1500W na materiałach powyżej 5 mm. Ceny od 45 000 zł netto.',
+                subtitle: 'Codzienna produkcja: najczęściej wybierany',
+                body: 'Stal węglowa do 12 mm, nierdzewka do 8 mm, aluminium do 6 mm. Złoty środek dla zakładów z regularnym wolumenem: wyraźna przewaga prędkości nad 1500W na materiałach powyżej 5 mm. Ceny od 45 000 zł netto.',
               },
               {
                 model: 'Blink 3000W',
@@ -121,19 +121,19 @@ export default function OSerwisiePage() {
             {[
               {
                 q: 'Czy jesteście autoryzowanym dealerem BLink Laser?',
-                a: 'Tak. Sprzedajemy maszyny z gwarancją producenta, prowadzimy instalację i szkolenia, zapewniamy serwis pogwarancyjny. Kupujesz bezpośrednio — bez pośrednika.',
+                a: 'Tak. Sprzedajemy maszyny z gwarancją producenta, prowadzimy instalację i szkolenia, zapewniamy serwis pogwarancyjny. Kupujesz bezpośrednio: bez pośrednika.',
               },
               {
                 q: 'Czy doradztwo przed zakupem jest bezpłatne?',
-                a: 'Tak, bezpłatnie i bez zobowiązań. Formularz kontaktowy nie wymaga podawania danych firmy. Odpowiadamy merytorycznie — z rekomendacją konkretnego modelu i uzasadnieniem.',
+                a: 'Tak, bezpłatnie i bez zobowiązań. Formularz kontaktowy nie wymaga podawania danych firmy. Odpowiadamy merytorycznie: z rekomendacją konkretnego modelu i uzasadnieniem.',
               },
               {
                 q: 'Jak szybko można otrzymać maszynę?',
-                a: 'Standardowy czas dostawy to 4–6 tygodni od złożenia zamówienia. Przy dostępności z magazynu europejskiego — 2–3 tygodnie.',
+                a: 'Standardowy czas dostawy to 4–6 tygodni od złożenia zamówienia. Przy dostępności z magazynu europejskiego: 2–3 tygodnie.',
               },
               {
                 q: 'Co obejmuje serwis pogwarancyjny?',
-                a: 'Przeglądy, wymiana elementów optycznych, naprawa układu chłodzenia i toru laserowego. Części na magazynie w Polsce — czas reakcji do 48h roboczych.',
+                a: 'Przeglądy, wymiana elementów optycznych, naprawa układu chłodzenia i toru laserowego. Części na magazynie w Polsce: czas reakcji do 48h roboczych.',
               },
               {
                 q: 'Jak się skontaktować?',

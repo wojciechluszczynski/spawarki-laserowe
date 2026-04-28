@@ -56,9 +56,9 @@ function flattenVariants(products: RawProduct[]): ProductVariant[] {
 }
 
 const CATEGORIES = [
-  { label: '1500W — wejście w technologię', families: ['BLS1500'] },
-  { label: '2000W — najczęściej wybierany', families: ['BLS2000'] },
-  { label: '3000W — intensywna produkcja', families: ['BLS3000'] },
+  { label: '1500W: wejście w technologię', families: ['BLS1500'] },
+  { label: '2000W: najczęściej wybierany', families: ['BLS2000'] },
+  { label: '3000W: intensywna produkcja', families: ['BLS3000'] },
 ]
 
 export default function ModelePage() {
@@ -76,7 +76,7 @@ export default function ModelePage() {
             Katalog spawarek laserowych
           </h1>
           <p className="text-lg max-w-2xl" style={{ color: 'rgba(255,255,255,0.55)' }}>
-            12 konfiguracji w 3 klasach mocy — każda dostępna z pojedynczą lub podwójną oscylacją głowicy i pojedynczym lub podwójnym podajnikiem drutu.
+            12 konfiguracji w 3 klasach mocy: każda dostępna z pojedynczą lub podwójną oscylacją głowicy i pojedynczym lub podwójnym podajnikiem drutu.
             Każda maszyna z gwarancją producenta i serwisem w Polsce.
           </p>
           <div className="flex flex-wrap gap-4 mt-6 text-sm">
@@ -114,7 +114,7 @@ export default function ModelePage() {
               </div>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
                 {catVariants.map((v) => (
-                  <VariantCard key={`${v.family}-${v.power}`} variant={v} />
+                  <VariantCard key={`${v.family}-${v.power}-${v.oscillation}-${v.feeder}`} variant={v} />
                 ))}
               </div>
             </div>
@@ -155,7 +155,7 @@ export default function ModelePage() {
 
         {/* SEO content */}
         <div className="mt-16 prose prose-neutral max-w-none">
-          <h2>Spawarki laserowe Blink 4w1 — co warto wiedzieć przed zakupem</h2>
+          <h2>Spawarki laserowe Blink 4w1: co warto wiedzieć przed zakupem</h2>
           <p>
             Spawarki laserowe fiber Blink to maszyny 4w1: spawanie, czyszczenie, hartowanie i lutowanie laserowe z jednej głowicy.
             W porównaniu do TIG i MIG oferują 2–5× wyższą prędkość spawania, minimalną strefę wpływu ciepła
@@ -164,20 +164,20 @@ export default function ModelePage() {
           <h3>Pojedyncza vs podwójna oscylacja głowicy</h3>
           <p>
             Podwójna oscylacja głowicy spawającej to kluczowa różnica między wariantami Blink.
-            Przy podwójnej oscylacji wiązka porusza się w dwóch osiach jednocześnie — spoina jest szersza, lepiej wtopiona
+            Przy podwójnej oscylacji wiązka porusza się w dwóch osiach jednocześnie: spoina jest szersza, lepiej wtopiona
             i ma mniejszą porowatość. Dla spawania stali nierdzewnej i aluminium podwójna oscylacja daje wyraźnie lepszy wynik estetyczny.
           </p>
           <h3>Pojedynczy vs podwójny podajnik drutu</h3>
           <p>
-            Podwójny podajnik drutu umożliwia załadowanie dwóch szpul jednocześnie — operator przełącza się między nimi
+            Podwójny podajnik drutu umożliwia załadowanie dwóch szpul jednocześnie: operator przełącza się między nimi
             bez przerywania pracy. Szczególnie przydatne przy produkcji mieszanej (np. stal węglowa i nierdzewna) lub
             przy długich sesjach spawania wymagających ciągłości.
           </p>
-          <h3>Grubości spawania — jaka moc?</h3>
+          <h3>Grubości spawania: jaka moc?</h3>
           <p>
             Blink 1500W spawa stal węglową do 10 mm, nierdzewną do 6 mm, aluminium do 4 mm. Ceny od 39 000 zł netto.
-            Blink 2000W — stal do 12 mm, nierdzewna do 8 mm, aluminium do 6 mm. Ceny od 45 000 zł netto.
-            Blink 3000W — stal do 20 mm, nierdzewna do 12 mm, aluminium do 10 mm. Ceny od 54 000 zł netto.
+            Blink 2000W: stal do 12 mm, nierdzewna do 8 mm, aluminium do 6 mm. Ceny od 45 000 zł netto.
+            Blink 3000W: stal do 20 mm, nierdzewna do 12 mm, aluminium do 10 mm. Ceny od 54 000 zł netto.
             Przy wyborze mocy decyduje nie tylko maksymalna grubość, ale prędkość spawania przy materiale dominującym w produkcji.
           </p>
         </div>

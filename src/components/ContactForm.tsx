@@ -16,14 +16,14 @@ const THICKNESS = [
   { value: '3–8 mm', hint: 'profil, płaskownik, kątownik' },
   { value: '8–15 mm', hint: 'gruba blacha, ścianka rury' },
   { value: 'powyżej 15 mm', hint: 'stalowe konstrukcje, trawersy' },
-  { value: 'różnie — zależy od zlecenia', hint: '' },
+  { value: 'różnie: zależy od zlecenia', hint: '' },
 ]
 
 const VOLUME = [
   { value: 'Kilka godzin dziennie', hint: 'małoseryjna, zlecenia jednostkowe' },
   { value: 'Jedna zmiana (ok. 8h)', hint: 'regularna produkcja dzienna' },
   { value: 'Dwie zmiany (ok. 16h)', hint: 'intensywna produkcja ciągła' },
-  { value: 'Nieregularnie — zlecenia sezonowe', hint: '' },
+  { value: 'Nieregularnie: zlecenia sezonowe', hint: '' },
 ]
 
 const LABELS = ['A', 'B', 'C', 'D', 'E']
@@ -161,7 +161,7 @@ export function ContactForm() {
           </svg>
         </div>
         <h3 className="text-xl font-black mb-2" style={{ color: 'var(--fg)' }}>
-          Gotowe — odpiszemy w 24h
+          Gotowe: odpiszemy w 24h
         </h3>
         <p className="text-sm" style={{ color: 'var(--muted)' }}>
           Sprawdź skrzynkę odbiorczą. Jeśli masz pilne pytanie, zadzwoń: <a href="tel:+48570854886" className="font-semibold" style={{ color: '#06B6D4' }}>+48 570 854 886</a>.
@@ -184,7 +184,7 @@ export function ContactForm() {
             Co spawasz?
           </h2>
           <p className="text-sm mb-7" style={{ color: 'var(--muted)' }}>
-            Zaznacz wszystkie materiały — też jeśli różne zlecenia.
+            Zaznacz wszystkie materiały: też jeśli różne zlecenia.
           </p>
           <div className="flex flex-col gap-2.5">
             {MATERIALS.map((m, i) => (
@@ -235,7 +235,7 @@ export function ContactForm() {
             Skala produkcji?
           </h2>
           <p className="text-sm mb-7" style={{ color: 'var(--muted)' }}>
-            Mniej więcej — chodzi o to, czy maszyna ma pracować godzinę dziennie czy całą zmianę.
+            Mniej więcej: chodzi o to, czy maszyna ma pracować godzinę dziennie czy całą zmianę.
           </p>
           <div className="flex flex-col gap-2.5">
             {VOLUME.map((v) => (
@@ -261,7 +261,7 @@ export function ContactForm() {
             Jak się z Tobą skontaktować?
           </h2>
           <p className="text-sm mb-7" style={{ color: 'var(--muted)' }}>
-            Odpiszemy z rekomendacją konkretnego modelu — bez spamu, jedno pytanie.
+            Odpiszemy z rekomendacją konkretnego modelu: bez spamu, jedno pytanie.
           </p>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-1.5">

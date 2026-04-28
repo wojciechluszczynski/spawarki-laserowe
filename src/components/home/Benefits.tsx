@@ -5,31 +5,31 @@ const benefits = [
     icon: IconSpeed,
     stat: '3–4×',
     title: 'szybciej niż TIG',
-    desc: 'Na stali nierdzewnej 3 mm: TIG ok. 8 min, laser ok. 2,5 min. Różnica rośnie wraz z wolumenem — przy 150 złączach dziennie to 13 roboczogodzin oszczędności.',
+    desc: 'Na stali nierdzewnej 3 mm: TIG ok. 8 min, laser ok. 2,5 min. Różnica rośnie wraz z wolumenem: przy 150 złączach dziennie to 13 roboczogodzin oszczędności.',
   },
   {
     icon: IconPrecision,
     stat: '<0,5 mm',
     title: 'strefa wpływu ciepła',
-    desc: 'Minimalne ciepło wejściowe — zero odkształceń na cienkiej blasze i nierdzewce. Elementy idą prosto do lakierni, bez prostowania.',
+    desc: 'Minimalne ciepło wejściowe: zero odkształceń na cienkiej blasze i nierdzewce. Elementy idą prosto do lakierni, bez prostowania.',
   },
   {
     icon: IconRepeat,
     stat: '0',
     title: 'szlifowania po spawaniu',
-    desc: 'Spoina gotowa z głowicy — bez szlifierki, bez tarcz, bez dodatkowego operatora. Na estetycznych złączach ze stali nierdzewnej różnica jest natychmiastowo widoczna.',
+    desc: 'Spoina gotowa z głowicy: bez szlifierki, bez tarcz, bez dodatkowego operatora. Na estetycznych złączach ze stali nierdzewnej różnica jest natychmiastowo widoczna.',
   },
   {
     icon: IconWaste,
     stat: '~1 l/min',
     title: 'zużycie argonu',
-    desc: 'TIG pobiera 10–15 l/min — laser potrzebuje ok. 10× mniej. Przy cenie argonu 8 zł/m³ i jednej zmianie to ponad 1 000 zł mniej na miesiąc.',
+    desc: 'TIG pobiera 10–15 l/min: laser potrzebuje ok. 10× mniej. Przy cenie argonu 8 zł/m³ i jednej zmianie to ponad 1 000 zł mniej na miesiąc.',
   },
   {
     icon: IconAutomation,
     stat: '4w1',
     title: 'funkcje z jednej głowicy',
-    desc: 'Spawanie, czyszczenie laserowe, hartowanie i lutowanie — bez zmiany maszyny. Zmiana funkcji to zmiana trybu w panelu.',
+    desc: 'Spawanie, czyszczenie laserowe, hartowanie i lutowanie: bez zmiany maszyny. Zmiana funkcji to zmiana trybu w panelu.',
   },
 ]
 
@@ -45,7 +45,7 @@ export function Benefits() {
             Co konkretnie zyskujesz
           </h2>
           <p style={{ color: 'var(--muted)' }}>
-            Nie "wyższa jakość" i "lepsza wydajność" — liczby z rzeczywistej produkcji.
+            Nie "wyższa jakość" i "lepsza wydajność": liczby z rzeczywistej produkcji.
           </p>
         </div>
 
