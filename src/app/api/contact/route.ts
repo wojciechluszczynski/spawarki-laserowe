@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
 
   const { error } = await resend.emails.send({
     from: 'Formularz spawarkilaserowe.com <onboarding@resend.dev>',
-    to: ['w.luszczynski@gmail.com'],
+    to: ['blink@blinklaser.com'],
     replyTo: email || undefined,
     subject: `Zapytanie od ${name}${company ? ` (${company})` : ''}`,
     text: lines,
