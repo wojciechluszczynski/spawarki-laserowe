@@ -115,30 +115,33 @@ export function ContactForm() {
     if (!name || !contactInfo) return
     setStatus('sending')
 
+    const isEmail = contactInfo.includes('@')
     const message = [
       materials.length ? `Materiały: ${materials.join(', ')}` : null,
       thickness ? `Grubość materiału: ${thickness}` : null,
       volume ? `Skala produkcji: ${volume}` : null,
+      !isEmail ? `Telefon: ${contactInfo}` : null,
       comment ? `Dodatkowe informacje: ${comment}` : null,
     ]
       .filter(Boolean)
       .join('\n')
 
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
+          access_key: '923899a5-441e-4c09-8257-0b4b150a9bb6',
+          subject: `Zapytanie od ${name}${company ? ` (${company})` : ''} — spawarkilaserowe.com`,
           name,
-          company,
-          email: contactInfo.includes('@') ? contactInfo : undefined,
-          phone: !contactInfo.includes('@') ? contactInfo : undefined,
+          email: isEmail ? contactInfo : 'formularz@spawarkilaserowe.com',
+          company: company || '',
           message: message || '(brak szczegółów)',
         }),
       })
       const json = await res.json()
-      if (!res.ok) {
-        setErrorMsg(json.error ?? 'Coś poszło nie tak.')
+      if (!json.success) {
+        setErrorMsg(json.message ?? 'Coś poszło nie tak.')
         setStatus('error')
       } else {
         setStatus('success')
