@@ -8,5 +8,11 @@
   "contact": {
     "email": "kontakt@spawarkilaserowe.com",
     "phone": "+48 000 000 000"
+  },
+  "analytics": {
+    "ga4": "",
+    "gtm": "",
+    "googleAds": "",
+    "metaPixel": ""
   }
 }
