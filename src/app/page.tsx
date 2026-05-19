@@ -1,9 +1,10 @@
 import { Hero } from '@/components/home/Hero'
 import { EditorialBanner } from '@/components/home/EditorialBanner'
 import { MachinesShowcase } from '@/components/home/MachinesShowcase'
-import { Benefits } from '@/components/home/Benefits'
-import { Industries } from '@/components/home/Industries'
+import { ProductHighlight } from '@/components/home/ProductHighlight'
+import { ConfigGallery } from '@/components/home/ConfigGallery'
 import { WhyUs } from '@/components/home/WhyUs'
+import { Industries } from '@/components/home/Industries'
 import { FaqSection } from '@/components/home/FaqSection'
 import { CtaBanner } from '@/components/home/CtaBanner'
 import faqData from '../../content/site/faq.json'
@@ -44,8 +45,9 @@ export default function HomePage() {
       <Hero />
       <EditorialBanner />
       <MachinesShowcase />
+      <ProductHighlight />
+      <ConfigGallery />
       <WhyUs />
-      <Benefits />
       <Industries />
       <FaqSection items={faq} />
       <CtaBanner />

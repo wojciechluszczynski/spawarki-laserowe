@@ -1,39 +1,39 @@
 const reasons = [
   {
     num: '01',
-    title: 'Autoryzowany dealer: gwarancja producenta',
-    desc: 'Kupujesz bezpośrednio od autoryzowanego dealera BLink Laser w Polsce. Gwarancja producenta, nie resellerska. Dokumentacja techniczna prosto od wytwórcy.',
+    title: 'Głowica 4w1: spawanie, czyszczenie, hartowanie, lutowanie',
+    desc: 'Jedna maszyna, cztery funkcje bez wymiany urządzenia. Zmiana trybu to 3 sekundy w panelu dotykowym. Żaden inny typ spawarki tego nie oferuje.',
   },
   {
     num: '02',
-    title: 'Serwis w Polsce: reakcja w 48h',
-    desc: 'Części zamienne na magazynie w kraju. Czas reakcji serwisu do 48h roboczych. Brak tygodniowych przestojów na import: to realna różnica przy maszynie pracującej na zmianę.',
+    title: 'Prędkość niemożliwa dla TIG i MIG',
+    desc: 'Nierdzewka 3 mm: TIG ok. 8 min, Blink ok. 2,5 min. Na 150 złączach dziennie to 13 roboczogodzin różnicy. Bez dodatkowego operatora.',
   },
   {
     num: '03',
-    title: 'Szkolenie operatora w cenie',
-    desc: 'Dostawa, instalacja i szkolenie obsługi wliczone w cenę zakupu. Operator samodzielnie pracuje po 1–3 dniach. Bez ukrytych kosztów uruchomienia.',
+    title: 'Zero szlifowania po spawaniu',
+    desc: 'Minimalna strefa wpływu ciepła (poniżej 0,5 mm) eliminuje odkształcenia i przebarwienia. Elementy idą bezpośrednio do lakierni lub do klienta.',
   },
   {
     num: '04',
-    title: 'Merytorycznie: nie tylko sprzedażowo',
-    desc: 'Jeśli 1500W wystarczy do Twojej produkcji: powiemy to wprost. Nie zaproponujemy 3000W dla wyższej marży. Naszym celem jest maszyna, która zarobi na siebie w zakładanym czasie.',
+    title: 'Zużycie argonu 10× niższe niż TIG',
+    desc: 'TIG: 10–15 l/min. Laser: ok. 1 l/min. Przy cenie argonu 8 zł/m³ i jednej zmianie to ponad 1 000 zł oszczędności miesięcznie na samym gazie.',
   },
 ]
 
 export function WhyUs() {
   return (
-    <section className="py-20" style={{ backgroundColor: 'var(--bg-card)' }}>
+    <section className="py-24" style={{ backgroundColor: 'var(--bg-card)' }}>
       <div className="max-w-6xl mx-auto px-6">
-        <div className="mb-12 max-w-xl">
-          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--accent)' }}>
-            Dlaczego przez nas
+        <div className="mb-12 max-w-2xl">
+          <p className="text-[11px] font-bold uppercase tracking-widest mb-3" style={{ color: 'var(--accent)' }}>
+            Przewagi techniczne
           </p>
-          <h2 className="text-2xl md:text-3xl font-black mb-3" style={{ letterSpacing: '-0.02em' }}>
-            Co różni nas od zwykłego sklepu
+          <h2 className="text-3xl md:text-4xl font-black mb-3" style={{ letterSpacing: '-0.03em' }}>
+            Co wyróżnia spawarki laserowe Blink
           </h2>
-          <p style={{ color: 'var(--muted)' }}>
-            Nie wystawiamy faktur i znikamy. Współpracujemy z zakładem przez cały cykl: od doboru modelu po serwis pogwarancyjny.
+          <p className="text-base" style={{ color: 'var(--muted)' }}>
+            Konkretne parametry, które decydują o opłacalności inwestycji w Twojej produkcji.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export function WhyUs() {
           {reasons.map((r) => (
             <li
               key={r.num}
-              className="flex gap-5 p-6 rounded-2xl border transition-all duration-200 hover:shadow-[var(--shadow-md)]"
+              className="flex gap-5 p-6 rounded-2xl border transition-all duration-200 hover:border-[var(--accent)] hover:shadow-[var(--shadow-md)]"
               style={{ borderColor: 'var(--border)', backgroundColor: 'var(--bg)' }}
             >
               <div

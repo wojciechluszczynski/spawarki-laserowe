@@ -4,7 +4,7 @@ import { ContactForm } from '@/components/ContactForm'
 export const metadata: Metadata = {
   title: 'Kontakt - Spawarki Laserowe BLink Laser',
   description:
-    'Skontaktuj się z autoryzowanym dealerem BLink Laser w Polsce. Dobierzemy spawarkę laserową do potrzeb Twojej firmy produkcyjnej. Odpowiadamy w 1 dzień roboczy.',
+    'Bezpłatne doradztwo techniczne przed zakupem spawarki laserowej. Opisz swój materiał i wolumen — odpowiemy z rekomendacją konkretnego modelu. Odpowiadamy w 1 dzień roboczy.',
 }
 
 export default function KontaktPage() {

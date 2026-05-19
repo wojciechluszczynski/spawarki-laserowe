@@ -1,13 +1,13 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'O serwisie: spawarkilaserowe.com',
+  title: 'O serwisie - spawarkilaserowe.com',
   description:
-    'Autoryzowany dealer BLink Laser w Polsce. Katalog spawarek laserowych 1500–3000W, porównania, poradniki zakupowe i bezpłatne doradztwo techniczne dla firm produkcyjnych.',
+    'Niezależny portal porównań i poradników zakupowych dla firm produkcyjnych wybierających spawarkę laserową. Jawne ceny, tabele specyfikacji, obiektywne doradztwo.',
   openGraph: {
     title: 'O serwisie spawarkilaserowe.com',
     description:
-      'Autoryzowany dealer BLink Laser. Katalog modeli, poradniki i bezpłatne doradztwo: dobieramy maszynę do Twojej produkcji.',
+      'Niezależny serwis porównawczy spawarek laserowych. Katalog modeli, poradniki i bezpłatne doradztwo techniczne.',
   },
 }
 
@@ -27,7 +27,7 @@ export default function OSerwisiePage() {
             O serwisie
           </h1>
           <p className="text-lg" style={{ color: 'rgba(255,255,255,0.55)' }}>
-            Autoryzowany dealer BLink Laser w Polsce: katalog, porównania i bezpłatne doradztwo przed zakupem.
+            Niezależny portal zakupowy: katalog, porównania i bezpłatne doradztwo techniczne przed decyzją inwestycyjną.
           </p>
         </div>
       </div>
@@ -38,19 +38,19 @@ export default function OSerwisiePage() {
         <section>
           <h2 className="text-xl font-black mb-4" style={{ letterSpacing: '-0.01em' }}>Czym jest ten serwis</h2>
           <p className="text-base leading-relaxed mb-4" style={{ color: 'var(--fg-secondary)' }}>
-            spawarkilaserowe.com to serwis informacyjny i sprzedażowy poświęcony spawarkom laserowym fiber marki BLink Laser.
-            Jesteśmy autoryzowanym dealerem w Polsce: sprzedajemy maszyny z gwarancją producenta, prowadzimy instalację,
-            szkolenia i serwis pogwarancyjny.
+            spawarkilaserowe.com to niezależny serwis informacyjny poświęcony spawarkom laserowym fiber. Katalogujemy modele,
+            publikujemy jawne ceny i tabele specyfikacji technicznych, piszemy poradniki zakupowe dla firm produkcyjnych
+            rozważających inwestycję w technologię laserową.
           </p>
           <p className="text-base leading-relaxed mb-4" style={{ color: 'var(--fg-secondary)' }}>
             Serwis powstał z obserwacji, że rynek spawarek laserowych w Polsce jest trudny do nawigacji dla kupującego —
             ceny dostępne tylko na zapytanie, oferty trudno porównywalne, a materiał edukacyjny w polskim języku rozproszony
-            i powierzchowny. Staramy się to zmieniać: jawne ceny, konkretne tabele specyfikacji i rzetelne odpowiedzi
-            na pytania przed zakupem.
+            i powierzchowny. Odpowiadamy na to: jawne ceny, konkretne tabele specyfikacji i rzetelne odpowiedzi
+            na pytania przed zakupem, bez presji sprzedażowej.
           </p>
           <p className="text-base leading-relaxed" style={{ color: 'var(--fg-secondary)' }}>
-            Jeśli 1500W wystarczy do Twojej produkcji: powiemy to. Nie zaproponujemy droższego modelu dla wyższej marży.
-            Naszym celem jest zakład, który kupił maszynę dopasowaną do potrzeb i zwrócił inwestycję w zakładanym czasie.
+            Opisywane maszyny to spawarki laserowe marki BLink Laser dostępne przez autoryzowanego partnera w Polsce.
+            Jeśli 1500W wystarczy do Twojej produkcji — piszemy to wprost. Doradztwo jest bezpłatne i bez zobowiązań.
           </p>
         </section>
 
@@ -120,8 +120,8 @@ export default function OSerwisiePage() {
           <div className="flex flex-col gap-6">
             {[
               {
-                q: 'Czy jesteście autoryzowanym dealerem BLink Laser?',
-                a: 'Tak. Sprzedajemy maszyny z gwarancją producenta, prowadzimy instalację i szkolenia, zapewniamy serwis pogwarancyjny. Kupujesz bezpośrednio: bez pośrednika.',
+                q: 'Skąd pochodzi zawartość tego serwisu?',
+                a: 'Dane techniczne opieramy na dokumentacji producenta i własnych pomiarach. Ceny publikujemy jawnie — są to ceny aktualne dla rynku polskiego. Opisywane maszyny to spawarki BLink Laser dostępne przez autoryzowanego partnera w Polsce.',
               },
               {
                 q: 'Czy doradztwo przed zakupem jest bezpłatne?',

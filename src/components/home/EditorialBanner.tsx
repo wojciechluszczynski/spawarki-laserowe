@@ -1,8 +1,8 @@
 const signals = [
-  { icon: '✓', text: 'Autoryzowany dealer BLink Laser' },
-  { icon: '✓', text: 'Gwarancja i serwis w Polsce' },
-  { icon: '✓', text: 'Szkolenie operatora w cenie' },
-  { icon: '✓', text: 'Odpowiedź w 24h robocze' },
+  { icon: '✓', text: 'Niezależny poradnik zakupowy' },
+  { icon: '✓', text: 'Obiektywne porównania modeli' },
+  { icon: '✓', text: 'Ceny jawne, bez zapytania' },
+  { icon: '✓', text: 'Odpowiedź eksperta w 24h' },
 ]
 
 export function EditorialBanner() {
