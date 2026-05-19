@@ -3,8 +3,8 @@ import { cookies } from 'next/headers'
 import settingsData from '../../../../../content/site/settings.json'
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN
-const GITHUB_OWNER = process.env.GITHUB_OWNER || 'wluszczynski-9654s-projects'
-const GITHUB_REPO = process.env.GITHUB_REPO || 'spawarkilaserowe'
+const GITHUB_OWNER = process.env.GITHUB_OWNER || 'wojciechluszczynski'
+const GITHUB_REPO = process.env.GITHUB_REPO || 'spawarki-laserowe'
 const GITHUB_BRANCH = process.env.GITHUB_BRANCH || 'main'
 
 export async function POST(req: Request) {
