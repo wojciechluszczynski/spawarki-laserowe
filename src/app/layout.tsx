@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     description: 'Katalog spawarek laserowych BLink Laser z porownanami i poradnikami zakupowymi.',
     images: ['/og/og-default.jpg'],
   },
+  verification: {
+    google: 'hfr31RkHaobzby-_O8nDai9f8b-fsMThTIG1imDEqwU',
+  },
 }
 
 const { ga4, gtm, googleAds, metaPixel } = settings.analytics
