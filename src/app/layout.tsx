@@ -19,6 +19,20 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
+const { ga4, gtm, googleAds, metaPixel, googleVerification, bingVerification, customHead } = settings.analytics as {
+  ga4?: string; gtm?: string; googleAds?: string; metaPixel?: string
+  googleVerification?: string; bingVerification?: string; customHead?: string
+}
+
+// Analityk może wkleić sam kod albo cały <meta ... content="KOD">. Wyłuskaj content jeśli trzeba.
+function verificationCode(raw?: string): string {
+  if (!raw) return ''
+  const m = raw.match(/content=["']([^"']+)["']/i)
+  return (m ? m[1] : raw).trim()
+}
+const googleCode = verificationCode(googleVerification)
+const bingCode = verificationCode(bingVerification)
+
 export const metadata: Metadata = {
   title: 'Spawarki laserowe fiber - katalog, porownania, poradniki zakupowe',
   description: 'Katalog spawarek laserowych BLink Laser: specyfikacje, porownania modeli i poradniki zakupowe. Doradztwo techniczne dla firm produkcyjnych.',
@@ -28,11 +42,10 @@ export const metadata: Metadata = {
     images: ['/og/og-default.jpg'],
   },
   verification: {
-    google: 'hfr31RkHaobzby-_O8nDai9f8b-fsMThTIG1imDEqwU',
+    ...(googleCode ? { google: googleCode } : {}),
+    ...(bingCode ? { other: { 'msvalidate.01': bingCode } } : {}),
   },
 }
-
-const { ga4, gtm, googleAds, metaPixel } = settings.analytics
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -63,6 +76,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {metaPixel && (
           <Script id="meta-pixel" strategy="afterInteractive">
             {`!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','${metaPixel}');fbq('track','PageView');`}
+          </Script>
+        )}
+        {/* Własny kod head z panelu — wstrzykiwany do <head> po stronie klienta */}
+        {customHead && (
+          <Script id="custom-head" strategy="afterInteractive">
+            {`(function(){var c=document.createElement('div');c.innerHTML=${JSON.stringify(customHead)};while(c.firstChild){document.head.appendChild(c.firstChild);}})();`}
           </Script>
         )}
       </head>

@@ -18,11 +18,19 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'GITHUB_TOKEN nie jest skonfigurowany.' }, { status: 500 })
   }
 
-  const { ga4, gtm, googleAds, metaPixel } = await req.json()
+  const { ga4, gtm, googleAds, metaPixel, googleVerification, bingVerification, customHead } = await req.json()
 
   const updated = {
     ...settingsData,
-    analytics: { ga4: ga4 ?? '', gtm: gtm ?? '', googleAds: googleAds ?? '', metaPixel: metaPixel ?? '' },
+    analytics: {
+      ga4: ga4 ?? '',
+      gtm: gtm ?? '',
+      googleAds: googleAds ?? '',
+      metaPixel: metaPixel ?? '',
+      googleVerification: googleVerification ?? '',
+      bingVerification: bingVerification ?? '',
+      customHead: customHead ?? '',
+    },
   }
 
   const path = 'content/site/settings.json'

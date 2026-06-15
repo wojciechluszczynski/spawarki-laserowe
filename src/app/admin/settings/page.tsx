@@ -25,7 +25,10 @@ const inp: React.CSSProperties = {
 }
 
 export default function AdminSettings() {
-  const [form, setForm] = useState({ ga4: '', gtm: '', googleAds: '', metaPixel: '' })
+  const [form, setForm] = useState({
+    ga4: '', gtm: '', googleAds: '', metaPixel: '',
+    googleVerification: '', bingVerification: '', customHead: '',
+  })
   const [loaded, setLoaded] = useState(false)
   const [status, setStatus] = useState<'idle' | 'saving' | 'success' | 'error'>('idle')
   const [errorMsg, setErrorMsg] = useState('')
@@ -35,7 +38,11 @@ export default function AdminSettings() {
       .then((r) => r.json())
       .then((d) => {
         const a = d.analytics ?? {}
-        setForm({ ga4: a.ga4 ?? '', gtm: a.gtm ?? '', googleAds: a.googleAds ?? '', metaPixel: a.metaPixel ?? '' })
+        setForm({
+          ga4: a.ga4 ?? '', gtm: a.gtm ?? '', googleAds: a.googleAds ?? '', metaPixel: a.metaPixel ?? '',
+          googleVerification: a.googleVerification ?? '', bingVerification: a.bingVerification ?? '',
+          customHead: a.customHead ?? '',
+        })
         setLoaded(true)
       })
       .catch(() => setLoaded(true))
@@ -57,7 +64,7 @@ export default function AdminSettings() {
     } catch { setErrorMsg('Problem z połączeniem.'); setStatus('error') }
   }
 
-  const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement>) =>
+  const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
     setForm((p) => ({ ...p, [k]: e.target.value }))
 
   const gtmActive = !!form.gtm
@@ -112,6 +119,36 @@ export default function AdminSettings() {
             <p className="text-xs font-bold uppercase tracking-wide" style={{ color: 'rgba(255,255,255,0.3)' }}>Meta / Facebook</p>
             <Field label="Meta Pixel ID" hint="15-cyfrowy numer ze strony Meta Business Suite">
               <input type="text" value={form.metaPixel} onChange={set('metaPixel')} placeholder="123456789012345" style={inp} />
+            </Field>
+          </div>
+
+          {/* Weryfikacja właściciela */}
+          <div className="rounded-xl p-5 flex flex-col gap-5"
+            style={{ backgroundColor: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.07)' }}>
+            <p className="text-xs font-bold uppercase tracking-wide" style={{ color: 'rgba(255,255,255,0.3)' }}>Weryfikacja właściciela</p>
+
+            <Field label="Google Search Console"
+              hint="Wklej sam kod z meta tagu (content=&quot;...&quot;) lub cały tag — wstrzykiwany do <head>.">
+              <input type="text" value={form.googleVerification} onChange={set('googleVerification')}
+                placeholder="np. hfr31RkHaobzby-_O8nDai9f8b-fsMThTIG1imDEqwU" style={inp} />
+            </Field>
+
+            <Field label="Bing Webmaster Tools"
+              hint="Kod weryfikacyjny z meta name=&quot;msvalidate.01&quot;.">
+              <input type="text" value={form.bingVerification} onChange={set('bingVerification')}
+                placeholder="np. A1B2C3D4E5F6..." style={inp} />
+            </Field>
+          </div>
+
+          {/* Własny kod head */}
+          <div className="rounded-xl p-5 flex flex-col gap-5"
+            style={{ backgroundColor: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.07)' }}>
+            <p className="text-xs font-bold uppercase tracking-wide" style={{ color: 'rgba(255,255,255,0.3)' }}>Własny kod (head)</p>
+            <Field label="Dowolne tagi / skrypty"
+              hint="Wklej tu dodatkowe skrypty marketingowe lub piksele. Trafiają do <head> na każdej stronie. Tagi weryfikacyjne dodawaj wyżej — tam są widoczne dla robotów.">
+              <textarea value={form.customHead} onChange={set('customHead')} rows={6}
+                placeholder={'<script>...</script>\n<!-- np. Hotjar, LinkedIn Insight, Clarity -->'}
+                style={{ ...inp, fontFamily: 'monospace', fontSize: '0.8rem', resize: 'vertical' }} />
             </Field>
           </div>
 
