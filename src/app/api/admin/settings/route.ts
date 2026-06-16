@@ -7,6 +7,13 @@ const GITHUB_OWNER = process.env.GITHUB_OWNER || 'wojciechluszczynski'
 const GITHUB_REPO = process.env.GITHUB_REPO || 'spawarki-laserowe'
 const GITHUB_BRANCH = process.env.GITHUB_BRANCH || 'main'
 
+function githubHint(status: number): string {
+  if (status === 401) return 'Token GITHUB_TOKEN jest nieprawidłowy lub wygasł.'
+  if (status === 403) return 'Token nie ma uprawnienia "Contents: write" lub przekroczono limit zapytań.'
+  if (status === 404) return `Sprawdź GITHUB_OWNER/GITHUB_REPO/GITHUB_BRANCH (obecnie ${GITHUB_OWNER}/${GITHUB_REPO}@${GITHUB_BRANCH}) — albo token nie ma dostępu do repo.`
+  return 'Sprawdź konfigurację GitHub w zmiennych środowiskowych Vercel.'
+}
+
 export async function POST(req: Request) {
   const cookieStore = await cookies()
   const token = cookieStore.get('admin_token')?.value
@@ -44,7 +51,11 @@ export async function POST(req: Request) {
     },
   })
   if (!existing.ok) {
-    return NextResponse.json({ error: 'Nie można pobrać pliku z GitHub.' }, { status: 500 })
+    const detail = await existing.text()
+    return NextResponse.json({
+      error: `Nie można pobrać pliku z GitHub (HTTP ${existing.status}). ${githubHint(existing.status)}`,
+      detail: detail.slice(0, 300),
+    }, { status: 500 })
   }
   const { sha } = await existing.json()
 

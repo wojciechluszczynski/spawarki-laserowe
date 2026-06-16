@@ -37,6 +37,7 @@ export default function AdminSettings() {
     fetch('/api/admin/content?file=settings')
       .then((r) => r.json())
       .then((d) => {
+        if (d.error) { setErrorMsg(d.error); setLoaded(true); return }
         const a = d.analytics ?? {}
         setForm({
           ga4: a.ga4 ?? '', gtm: a.gtm ?? '', googleAds: a.googleAds ?? '', metaPixel: a.metaPixel ?? '',
@@ -45,7 +46,7 @@ export default function AdminSettings() {
         })
         setLoaded(true)
       })
-      .catch(() => setLoaded(true))
+      .catch(() => { setErrorMsg('Nie udało się wczytać ustawień (problem z połączeniem).'); setLoaded(true) })
   }, [])
 
   async function handleSave(e: React.FormEvent) {

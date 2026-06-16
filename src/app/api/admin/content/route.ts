@@ -16,6 +16,13 @@ function githubUrl(path: string) {
   return `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${path}`
 }
 
+function githubHint(status: number): string {
+  if (status === 401) return 'Token GITHUB_TOKEN jest nieprawidłowy lub wygasł.'
+  if (status === 403) return 'Token nie ma uprawnienia "Contents: write" lub przekroczono limit zapytań.'
+  if (status === 404) return `Sprawdź GITHUB_OWNER/GITHUB_REPO/GITHUB_BRANCH (obecnie ${GITHUB_OWNER}/${GITHUB_REPO}@${GITHUB_BRANCH}) — albo token nie ma dostępu do repo.`
+  return 'Sprawdź konfigurację GitHub w zmiennych środowiskowych Vercel.'
+}
+
 // ─── GET: return current file contents ───────────────────────────────────────
 export async function GET(req: Request) {
   if (!(await authCheck())) {
@@ -35,7 +42,11 @@ export async function GET(req: Request) {
       Accept: 'application/vnd.github+json',
     },
   })
-  if (!res.ok) return NextResponse.json({ error: 'Nie można pobrać pliku.' }, { status: 500 })
+  if (!res.ok) {
+    return NextResponse.json({
+      error: `Nie można pobrać pliku z GitHub (HTTP ${res.status}). ${githubHint(res.status)}`,
+    }, { status: res.status === 401 ? 401 : 500 })
+  }
 
   const { content } = await res.json()
   const decoded = JSON.parse(Buffer.from(content, 'base64').toString('utf-8'))
@@ -65,7 +76,11 @@ export async function POST(req: Request) {
 
   // Fetch current file to get SHA + content
   const existing = await fetch(`${apiUrl}?ref=${GITHUB_BRANCH}`, { headers: ghHeaders })
-  if (!existing.ok) return NextResponse.json({ error: 'Nie można pobrać pliku z GitHub.' }, { status: 500 })
+  if (!existing.ok) {
+    return NextResponse.json({
+      error: `Nie można pobrać pliku z GitHub (HTTP ${existing.status}). ${githubHint(existing.status)}`,
+    }, { status: 500 })
+  }
   const { sha, content: rawContent } = await existing.json()
   const current = JSON.parse(Buffer.from(rawContent, 'base64').toString('utf-8'))
 
